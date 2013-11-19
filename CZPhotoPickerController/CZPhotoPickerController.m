@@ -20,9 +20,9 @@
 
 
 typedef enum {
-  PhotoPickerButtonUseLastPhoto,
-  PhotoPickerButtonTakePhoto,
-  PhotoPickerButtonChooseFromLibrary,
+    PhotoPickerButtonTakePhoto,
+    PhotoPickerButtonUseLastPhoto,
+    PhotoPickerButtonChooseFromLibrary,
 } PhotoPickerButtonKind;
 
 
@@ -48,365 +48,373 @@ typedef enum {
 
 + (BOOL)canTakePhoto
 {
-  if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) {
-    return NO;
-  }
-
-  NSArray *availableMediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
-
-  if ([availableMediaTypes containsObject:(NSString *)kUTTypeImage] == NO) {
-    return NO;
-  }
-
-  return YES;
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) {
+        return NO;
+    }
+    
+    NSArray *availableMediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
+    
+    if ([availableMediaTypes containsObject:(NSString *)kUTTypeImage] == NO) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 + (BOOL)isOS7
 {
-  NSString *version = [UIDevice currentDevice].systemVersion;
-  NSComparisonResult result = [@"7.0" compare : version options : NSNumericSearch];
-  return (result == NSOrderedSame || result == NSOrderedAscending);
+    NSString *version = [UIDevice currentDevice].systemVersion;
+    NSComparisonResult result = [@"7.0" compare : version options : NSNumericSearch];
+    return (result == NSOrderedSame || result == NSOrderedAscending);
 }
 
 #pragma mark - Lifecycle
 
 - (void)dealloc
 {
-  [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
 }
 
 - (id)initWithPresentingViewController:(UIViewController *)aViewController withCompletionBlock:(CZPhotoPickerCompletionBlock)completionBlock;
 {
-  self = [super init];
-
-  if (self) {
-    self.completionBlock = completionBlock;
-    self.offerLastTaken = YES;
-    self.saveToCameraRoll = YES;
-    self.showFromViewController = aViewController;
-    [self observeApplicationDidEnterBackgroundNotification];
-  }
-
-  return self;
+    self = [super init];
+    
+    if (self) {
+        self.completionBlock = completionBlock;
+        self.offerLastTaken = YES;
+        self.saveToCameraRoll = YES;
+        self.showFromViewController = aViewController;
+        self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+        [self observeApplicationDidEnterBackgroundNotification];
+    }
+    
+    return self;
 }
 
 #pragma mark - Methods
 
 - (void)applicationDidEnterBackground:(NSNotification *)notification
 {
-  [self.popoverController dismissPopoverAnimated:YES];
-  self.popoverController = nil;
-
-  if (self.completionBlock) {
-    self.completionBlock(nil, nil);
-  }
+    [self.popoverController dismissPopoverAnimated:YES];
+    self.popoverController = nil;
+    
+    if (self.completionBlock) {
+        self.completionBlock(nil, nil);
+    }
 }
 
 - (ALAssetsLibrary *)assetsLibrary
 {
-  if (_assetsLibrary == nil) {
-    _assetsLibrary = [[ALAssetsLibrary alloc] init];
-  }
-
-  return _assetsLibrary;
+    if (_assetsLibrary == nil) {
+        _assetsLibrary = [[ALAssetsLibrary alloc] init];
+    }
+    
+    return _assetsLibrary;
 }
 
 - (NSString *)buttonTitleForButtonIndex:(NSUInteger)buttonIndex
 {
-  switch (buttonIndex) {
-    case PhotoPickerButtonUseLastPhoto:
-      return NSLocalizedString(@"Use Last Photo Taken", nil);
-
-    case PhotoPickerButtonTakePhoto:
-      return NSLocalizedString(@"Take Photo", nil);
-
-    case PhotoPickerButtonChooseFromLibrary:
-      return NSLocalizedString(@"Choose from Library", nil);
-
-    default:
-      return nil;
-  }
+    switch (buttonIndex) {
+        case PhotoPickerButtonUseLastPhoto:
+            return NSLocalizedString(@"Use Last Photo Taken", nil);
+            
+        case PhotoPickerButtonTakePhoto:
+            return NSLocalizedString(@"Take Photo", nil);
+            
+        case PhotoPickerButtonChooseFromLibrary:
+            return NSLocalizedString(@"Choose from Library", nil);
+            
+        default:
+            return nil;
+    }
 }
 
 - (UIImage *)cropImage:(UIImage *)image
 {
-  CGFloat resizeScale = (image.size.width / self.cropOverlaySize.width);
-
-  CGSize size = image.size;
-  CGSize cropSize = CGSizeMake(self.cropOverlaySize.width * resizeScale, self.cropOverlaySize.height * resizeScale);
-
-  CGFloat scalex = cropSize.width / size.width;
-  CGFloat scaley = cropSize.height / size.height;
-  CGFloat scale = MAX(scalex, scaley);
-
-  UIGraphicsBeginImageContext(cropSize);
-
-  CGFloat width = size.width * scale;
-  CGFloat height = size.height * scale;
-
-  CGFloat originX = ((cropSize.width - width) / 2.0f);
-  CGFloat originY = ((cropSize.height - height) / 2.0f);
-
-  CGRect rect = CGRectMake(originX, originY, size.width * scale, size.height * scale);
-  [image drawInRect:rect];
-
-  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-  UIGraphicsEndImageContext();
-
-  return newImage;
+    CGFloat resizeScale = (image.size.width / self.cropOverlaySize.width);
+    
+    CGSize size = image.size;
+    CGSize cropSize = CGSizeMake(self.cropOverlaySize.width * resizeScale, self.cropOverlaySize.height * resizeScale);
+    
+    CGFloat scalex = cropSize.width / size.width;
+    CGFloat scaley = cropSize.height / size.height;
+    CGFloat scale = MAX(scalex, scaley);
+    
+    UIGraphicsBeginImageContext(cropSize);
+    
+    CGFloat width = size.width * scale;
+    CGFloat height = size.height * scale;
+    
+    CGFloat originX = ((cropSize.width - width) / 2.0f);
+    CGFloat originY = ((cropSize.height - height) / 2.0f);
+    
+    CGRect rect = CGRectMake(originX, originY, size.width * scale, size.height * scale);
+    [image drawInRect:rect];
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 - (void)dismissAnimated:(BOOL)animated
 {
-  if (self.showFromViewController.presentedViewController) {
-    [self.showFromViewController dismissViewControllerAnimated:animated completion:nil];
-  }
-  else if (self.popoverController) {
-    [self.popoverController dismissPopoverAnimated:animated];
-  }
+    if (self.showFromViewController.presentedViewController) {
+        [self.showFromViewController dismissViewControllerAnimated:animated completion:nil];
+    }
+    else if (self.popoverController) {
+        [self.popoverController dismissPopoverAnimated:animated];
+    }
 }
 
 - (void)getLastPhotoTakenWithCompletionBlock:(void (^)(UIImage *))completionBlock
 {
-  [self.assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-
-    if (*stop == YES) {
-      return;
-    }
-
-    group.assetsFilter = [ALAssetsFilter allPhotos];
-
-    if ([group numberOfAssets] == 0) {
-      completionBlock(nil);
-    }
-    else {
-      [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *innerStop) {
-
-          // `index` will be `NSNotFound` on last call
-
-          if (index == NSNotFound || result == nil) {
+    [self.assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        
+        if (*stop == YES) {
             return;
-          }
-
-          ALAssetRepresentation *representation = [result defaultRepresentation];
-          completionBlock([UIImage imageWithCGImage:[representation fullScreenImage]]);
-
-          *innerStop = YES;
-        }];
-    }
-
-    *stop = YES;
-
-  } failureBlock:^(NSError *error) {
-    completionBlock(nil);
-  }];
+        }
+        
+        group.assetsFilter = [ALAssetsFilter allPhotos];
+        
+        if ([group numberOfAssets] == 0) {
+            completionBlock(nil);
+        }
+        else {
+            [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *innerStop) {
+                
+                // `index` will be `NSNotFound` on last call
+                
+                if (index == NSNotFound || result == nil) {
+                    return;
+                }
+                
+                ALAssetRepresentation *representation = [result defaultRepresentation];
+                completionBlock([UIImage imageWithCGImage:[representation fullScreenImage]]);
+                
+                *innerStop = YES;
+            }];
+        }
+        
+        *stop = YES;
+        
+    } failureBlock:^(NSError *error) {
+        completionBlock(nil);
+    }];
 }
 
 - (UIPopoverController *)makePopoverController:(UIImagePickerController *)mediaUI
 {
-  if (self.popoverControllerClass) {
-    return [[self.popoverControllerClass alloc] initWithContentViewController:mediaUI];
-  }
-  else {
-    return [[UIPopoverController alloc] initWithContentViewController:mediaUI];
-  }
+    if (self.popoverControllerClass) {
+        return [[self.popoverControllerClass alloc] initWithContentViewController:mediaUI];
+    }
+    else {
+        return [[UIPopoverController alloc] initWithContentViewController:mediaUI];
+    }
 }
 
 - (void)observeApplicationDidEnterBackgroundNotification
 {
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
 }
 
 - (void)show
 {
-  if ([[self class] canTakePhoto] == NO) {
-    [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-  }
-  else {
-    void (^showActionSheetBlock)(UIImage *) = ^(UIImage *lastPhoto) {
-
-      self.lastPhoto = lastPhoto;
-
-      UIActionSheet *sheet;
-
-      if (lastPhoto) {
-        sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonUseLastPhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
-      }
-      else {
-        sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
-      }
-
-      if (self.showFromBarButtonItem) {
-        [sheet showFromBarButtonItem:self.showFromBarButtonItem animated:YES];
-      }
-      else if (self.showFromTabBar) {
-        [sheet showFromTabBar:self.showFromTabBar];
-      }
-      else {
-        [sheet showFromRect:self.showFromRect inView:self.showFromViewController.view animated:YES];
-      }
-    };
-
-    if (self.offerLastTaken) {
-      [self getLastPhotoTakenWithCompletionBlock:showActionSheetBlock];
+    if ([[self class] canTakePhoto] == NO) {
+        [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }
     else {
-      showActionSheetBlock(nil);
+        void (^showActionSheetBlock)(UIImage *) = ^(UIImage *lastPhoto) {
+            
+            self.lastPhoto = lastPhoto;
+            
+            UIActionSheet *sheet;
+            
+            if (lastPhoto) {
+                sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonUseLastPhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
+            }
+            else {
+                sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
+            }
+            
+            if (self.showFromBarButtonItem) {
+                [sheet showFromBarButtonItem:self.showFromBarButtonItem animated:YES];
+            }
+            else if (self.showFromTabBar) {
+                [sheet showFromTabBar:self.showFromTabBar];
+            }
+            else {
+                [sheet showFromRect:self.showFromRect inView:self.showFromViewController.view animated:YES];
+            }
+        };
+        
+        if (self.offerLastTaken) {
+            [self getLastPhotoTakenWithCompletionBlock:showActionSheetBlock];
+        }
+        else {
+            showActionSheetBlock(nil);
+        }
     }
-  }
 }
 
 - (void)showFromBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
-  self.showFromBarButtonItem = barButtonItem;
-  [self show];
+    self.showFromBarButtonItem = barButtonItem;
+    [self show];
 }
 
 - (void)showFromTabBar:(UITabBar *)tabBar
 {
-  self.showFromTabBar = tabBar;
-  [self show];
+    self.showFromTabBar = tabBar;
+    [self show];
 }
 
 - (void)showFromRect:(CGRect)rect
 {
-  self.showFromRect = rect;
-  [self show];
+    self.showFromRect = rect;
+    [self show];
 }
 
 - (void)showImagePickerWithSourceType:(UIImagePickerControllerSourceType)sourceType
 {
-  self.sourceType = sourceType;
-
-  UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
-  mediaUI.allowsEditing = self.allowsEditing;
-  mediaUI.delegate = self;
-  mediaUI.mediaTypes = @[ (NSString *)kUTTypeImage ];
-  mediaUI.sourceType = sourceType;
-
-  if (sourceType == UIImagePickerControllerSourceTypeCamera && CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
-    CGRect overlayFrame = mediaUI.view.frame;
-
-    BOOL isPhone = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone);
-    BOOL isTallPhone = (isPhone && CGRectGetHeight(UIScreen.mainScreen.bounds) > 480);
-
-    if ([CZPhotoPickerController isOS7]) {
-      if (isTallPhone) {
-        overlayFrame = UIEdgeInsetsInsetRect(overlayFrame, UIEdgeInsetsMake(68, 0, 72, 0));
-      }
+    self.sourceType = sourceType;
+    
+    UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
+    mediaUI.allowsEditing = self.allowsEditing;
+    mediaUI.delegate = self;
+    mediaUI.mediaTypes = @[ (NSString *)kUTTypeImage ];
+    mediaUI.sourceType = sourceType;
+    if(sourceType == UIImagePickerControllerSourceTypeCamera)
+    {
+        if ([UIImagePickerController isCameraDeviceAvailable:self.cameraDevice])
+        {
+            mediaUI.cameraDevice = self.cameraDevice;
+        }
     }
-    else if (isPhone) {
-      if (isTallPhone) {
-        overlayFrame.size.height -= 96;
-      }
-      else {
-        overlayFrame.size.height -= 54;
-      }
+    
+    if (sourceType == UIImagePickerControllerSourceTypeCamera && CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
+        CGRect overlayFrame = mediaUI.view.frame;
+        
+        BOOL isPhone = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone);
+        BOOL isTallPhone = (isPhone && CGRectGetHeight(UIScreen.mainScreen.bounds) > 480);
+        
+        if ([CZPhotoPickerController isOS7]) {
+            if (isTallPhone) {
+                overlayFrame = UIEdgeInsetsInsetRect(overlayFrame, UIEdgeInsetsMake(68, 0, 72, 0));
+            }
+        }
+        else if (isPhone) {
+            if (isTallPhone) {
+                overlayFrame.size.height -= 96;
+            }
+            else {
+                overlayFrame.size.height -= 54;
+            }
+        }
+        
+        CZCropPreviewOverlayView *overlayView = [[CZCropPreviewOverlayView alloc] initWithFrame:overlayFrame cropOverlaySize:self.cropOverlaySize];
+        mediaUI.cameraOverlayView = overlayView;
     }
-
-    CZCropPreviewOverlayView *overlayView = [[CZCropPreviewOverlayView alloc] initWithFrame:overlayFrame cropOverlaySize:self.cropOverlaySize];
-    mediaUI.cameraOverlayView = overlayView;
-  }
-
-  if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary)) {
-    self.popoverController = [self makePopoverController:mediaUI];
-    self.popoverController.delegate = self;
-
-    if (self.showFromBarButtonItem) {
-      [self.popoverController presentPopoverFromBarButtonItem:self.showFromBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    
+    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary)) {
+        self.popoverController = [self makePopoverController:mediaUI];
+        self.popoverController.delegate = self;
+        
+        if (self.showFromBarButtonItem) {
+            [self.popoverController presentPopoverFromBarButtonItem:self.showFromBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        }
+        else {
+            [self.popoverController presentPopoverFromRect:self.showFromRect inView:self.showFromViewController.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        }
     }
     else {
-      [self.popoverController presentPopoverFromRect:self.showFromRect inView:self.showFromViewController.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        [self.showFromViewController presentViewController:mediaUI animated:YES completion:nil];
     }
-  }
-  else {
-    [self.showFromViewController presentViewController:mediaUI animated:YES completion:nil];
-  }
 }
 
 #pragma mark - UIActionSheetDelegate
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-  actionSheet.delegate = nil;
-
-  if (buttonIndex == actionSheet.cancelButtonIndex) {
-    self.completionBlock(nil, nil);
-    return;
-  }
-
-  if (self.lastPhoto == nil) {
-    buttonIndex++;
-  }
-
-  switch (buttonIndex) {
-    case 0:
-      self.completionBlock(nil, @{ UIImagePickerControllerOriginalImage : self.lastPhoto, UIImagePickerControllerEditedImage : self.lastPhoto });
-      break;
-
-    case 1:
-      [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypeCamera];
-      return;
-
-    case 2:
-      [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-      break;
-
-    default:
-      break;
-  }
+    actionSheet.delegate = nil;
+    
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        self.completionBlock(nil, nil);
+        return;
+    }
+    
+    if (buttonIndex == 1 && self.lastPhoto == nil) {
+        buttonIndex++;
+    }
+    
+    switch (buttonIndex) {
+        case 0:
+            [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypeCamera];
+            break;
+            
+        case 1:
+            self.completionBlock(nil, @{ UIImagePickerControllerOriginalImage : self.lastPhoto, UIImagePickerControllerEditedImage : self.lastPhoto });
+            return;
+            
+        case 2:
+            [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-  UIImage *image = info[(self.allowsEditing ? UIImagePickerControllerEditedImage : UIImagePickerControllerOriginalImage)];
-
-  if (self.sourceType == UIImagePickerControllerSourceTypeCamera && self.saveToCameraRoll) {
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-  }
-
-  // if they chose the photo, and didn't edit, push in a preview
-
-  if (self.allowsEditing == NO && self.sourceType != UIImagePickerControllerSourceTypeCamera) {
-    CZPhotoPreviewViewController *vc = [[CZPhotoPreviewViewController alloc] initWithImage:image cropOverlaySize:self.cropOverlaySize chooseBlock:^(UIImage *chosenImage) {
-      [self.popoverController dismissPopoverAnimated:YES];
-
-      NSMutableDictionary *mutableImageInfo = [info mutableCopy];
-      mutableImageInfo[UIImagePickerControllerEditedImage] = chosenImage;
-
-      self.completionBlock(picker, [mutableImageInfo copy]);
-    } cancelBlock:^{
-      [picker popViewControllerAnimated:YES];
-    }];
-
-    [picker pushViewController:vc animated:YES];
-  }
-  else {
-    NSMutableDictionary *mutableImageInfo = [info mutableCopy];
-
-    if (CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
-      mutableImageInfo[UIImagePickerControllerEditedImage] = [self cropImage:image];
+    UIImage *image = info[(self.allowsEditing ? UIImagePickerControllerEditedImage : UIImagePickerControllerOriginalImage)];
+    
+    if (self.sourceType == UIImagePickerControllerSourceTypeCamera && self.saveToCameraRoll) {
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     }
-
-    [self.popoverController dismissPopoverAnimated:YES];
-
-    self.completionBlock(picker, mutableImageInfo);
-  }
+    
+    // if they chose the photo, and didn't edit, push in a preview
+    
+    if (self.allowsEditing == NO && self.sourceType != UIImagePickerControllerSourceTypeCamera) {
+        CZPhotoPreviewViewController *vc = [[CZPhotoPreviewViewController alloc] initWithImage:image cropOverlaySize:self.cropOverlaySize chooseBlock:^(UIImage *chosenImage) {
+            [self.popoverController dismissPopoverAnimated:YES];
+            
+            NSMutableDictionary *mutableImageInfo = [info mutableCopy];
+            mutableImageInfo[UIImagePickerControllerEditedImage] = chosenImage;
+            
+            self.completionBlock(picker, [mutableImageInfo copy]);
+        } cancelBlock:^{
+            [picker popViewControllerAnimated:YES];
+        }];
+        
+        [picker pushViewController:vc animated:YES];
+    }
+    else {
+        NSMutableDictionary *mutableImageInfo = [info mutableCopy];
+        
+        if (CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
+            mutableImageInfo[UIImagePickerControllerEditedImage] = [self cropImage:image];
+        }
+        
+        [self.popoverController dismissPopoverAnimated:YES];
+        
+        self.completionBlock(picker, mutableImageInfo);
+    }
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-  self.completionBlock(nil, nil);
+    self.completionBlock(nil, nil);
 }
 
 #pragma mark - UIPopoverControllerDelegate
 
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
 {
-  self.popoverController = nil;
-  self.completionBlock(nil, nil);
+    self.popoverController = nil;
+    self.completionBlock(nil, nil);
 }
 
 @end

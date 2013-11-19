@@ -49,6 +49,8 @@ typedef void (^CZPhotoPickerCompletionBlock)(UIImagePickerController *imagePicke
 */
 @property(nonatomic,assign) BOOL saveToCameraRoll;
 
+@property(nonatomic,assign) UIImagePickerControllerCameraDevice cameraDevice;
+
 /**
  @param completionBlock Called when a photo has been picked or cancelled (`imageInfoDict` will be nil if canceled). The `UIImagePickerController` has not been dismissed at the time of this being called.
  */
