@@ -65,12 +65,12 @@ typedef enum {
 
 + (BOOL)isOS7OrHigher
 {
-  return ([UIDevice currentDevice].systemVersion.floatValue >= 7.0);
+    return ([UIDevice currentDevice].systemVersion.floatValue >= 7.0);
 }
 
 + (BOOL)isOS8OrHigher
 {
-  return ([UIDevice currentDevice].systemVersion.floatValue >= 8.0);
+    return ([UIDevice currentDevice].systemVersion.floatValue >= 8.0);
 }
 
 #pragma mark - Lifecycle
@@ -236,7 +236,7 @@ typedef enum {
             UIActionSheet *sheet;
             
             if (lastPhoto) {
-                sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonUseLastPhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
+                sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonUseLastPhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
             }
             else {
                 sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:[self buttonTitleForButtonIndex:PhotoPickerButtonTakePhoto], [self buttonTitleForButtonIndex:PhotoPickerButtonChooseFromLibrary], nil];
@@ -282,147 +282,147 @@ typedef enum {
 
 - (void)showImagePickerWithSourceType:(UIImagePickerControllerSourceType)sourceType
 {
-  if (sourceType == UIImagePickerControllerSourceTypeCamera) {
-    AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-    switch (status) {
-      case AVAuthorizationStatusAuthorized:
-      case AVAuthorizationStatusNotDetermined:
-        // Show UIImagePickerController; it will ask for permission if the status
-        // is not determined.
-        break;
-
-      case AVAuthorizationStatusDenied:
-      case AVAuthorizationStatusRestricted:
-        [[CZPhotoPickerPermissionAlert sharedInstance] showAlert];
-        break;
+    if (sourceType == UIImagePickerControllerSourceTypeCamera) {
+        AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        switch (status) {
+            case AVAuthorizationStatusAuthorized:
+            case AVAuthorizationStatusNotDetermined:
+                // Show UIImagePickerController; it will ask for permission if the status
+                // is not determined.
+                break;
+                
+            case AVAuthorizationStatusDenied:
+            case AVAuthorizationStatusRestricted:
+                [[CZPhotoPickerPermissionAlert sharedInstance] showAlert];
+                break;
+        }
     }
-  }
-
-  self.sourceType = sourceType;
-
-  UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
-  mediaUI.allowsEditing = self.allowsEditing;
-  mediaUI.delegate = self;
-  mediaUI.mediaTypes = @[ (NSString *)kUTTypeImage ];
-  mediaUI.sourceType = sourceType;
-
-  if (sourceType == UIImagePickerControllerSourceTypeCamera && CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
-    CGRect overlayFrame = mediaUI.view.frame;
-
-    BOOL isPhone = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone);
-    BOOL isTallPhone = (isPhone && CGRectGetHeight(UIScreen.mainScreen.bounds) > 480);
-
-    if ([CZPhotoPickerController isOS7OrHigher]) {
-      if (isTallPhone) {
-        overlayFrame = UIEdgeInsetsInsetRect(overlayFrame, UIEdgeInsetsMake(68, 0, 72, 0));
-      }
+    
+    self.sourceType = sourceType;
+    
+    UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
+    mediaUI.allowsEditing = self.allowsEditing;
+    mediaUI.delegate = self;
+    mediaUI.mediaTypes = @[ (NSString *)kUTTypeImage ];
+    mediaUI.sourceType = sourceType;
+    
+    if (sourceType == UIImagePickerControllerSourceTypeCamera && CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
+        CGRect overlayFrame = mediaUI.view.frame;
+        
+        BOOL isPhone = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone);
+        BOOL isTallPhone = (isPhone && CGRectGetHeight(UIScreen.mainScreen.bounds) > 480);
+        
+        if ([CZPhotoPickerController isOS7OrHigher]) {
+            if (isTallPhone) {
+                overlayFrame = UIEdgeInsetsInsetRect(overlayFrame, UIEdgeInsetsMake(68, 0, 72, 0));
+            }
+        }
+        else if (isPhone) {
+            if (isTallPhone) {
+                overlayFrame.size.height -= 96;
+            }
+            else {
+                overlayFrame.size.height -= 54;
+            }
+        }
+        
+        CZCropPreviewOverlayView *overlayView = [[CZCropPreviewOverlayView alloc] initWithFrame:overlayFrame cropOverlaySize:self.cropOverlaySize];
+        mediaUI.cameraOverlayView = overlayView;
     }
-    else if (isPhone) {
-      if (isTallPhone) {
-        overlayFrame.size.height -= 96;
-      }
-      else {
-        overlayFrame.size.height -= 54;
-      }
+    
+    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary)) {
+        self.popoverController = [self makePopoverController:mediaUI];
+        self.popoverController.delegate = self;
+        
+        // Bug Workaround (as of iOS 8.0.2) :
+        // Presenting popover from popover does not work unless performed with a delay.
+        //
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (self.showFromBarButtonItem) {
+                [self.popoverController presentPopoverFromBarButtonItem:self.showFromBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+            }
+            else {
+                [self.popoverController presentPopoverFromRect:self.showFromRect inView:self.showFromViewController.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+            }
+        });
     }
-
-    CZCropPreviewOverlayView *overlayView = [[CZCropPreviewOverlayView alloc] initWithFrame:overlayFrame cropOverlaySize:self.cropOverlaySize];
-    mediaUI.cameraOverlayView = overlayView;
-  }
-
-  if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary)) {
-    self.popoverController = [self makePopoverController:mediaUI];
-    self.popoverController.delegate = self;
-
-    // Bug Workaround (as of iOS 8.0.2) :
-    // Presenting popover from popover does not work unless performed with a delay.
-    //
-    dispatch_async(dispatch_get_main_queue(), ^{
-      if (self.showFromBarButtonItem) {
-        [self.popoverController presentPopoverFromBarButtonItem:self.showFromBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-      }
-      else {
-        [self.popoverController presentPopoverFromRect:self.showFromRect inView:self.showFromViewController.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-      }
-    });
-  }
-  else {
-    dispatch_async(dispatch_get_main_queue(), ^{ // ditto. see comment above
-      [self.showFromViewController presentViewController:mediaUI animated:YES completion:nil];
-    });
-  }
+    else {
+        dispatch_async(dispatch_get_main_queue(), ^{ // ditto. see comment above
+            [self.showFromViewController presentViewController:mediaUI animated:YES completion:nil];
+        });
+    }
 }
 
 #pragma mark - UIActionSheetDelegate
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-  actionSheet.delegate = nil;
-
-  if (buttonIndex == actionSheet.cancelButtonIndex) {
-    self.completionBlock(nil, nil);
-    return;
-  }
-
-  if (self.lastPhoto == nil) {
-    buttonIndex++;
-  }
-
-  switch (buttonIndex) {
-    case 0:
-      self.completionBlock(nil, @{ UIImagePickerControllerOriginalImage : self.lastPhoto, UIImagePickerControllerEditedImage : self.lastPhoto });
-      break;
-
-    case 1:
-      [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypeCamera];
-      return;
-
-    case 2:
-      [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-      break;
-
-    default:
-      break;
-  }
+    actionSheet.delegate = nil;
+    
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        self.completionBlock(nil, nil);
+        return;
+    }
+    
+    if (self.lastPhoto == nil) {
+        buttonIndex++;
+    }
+    
+    switch (buttonIndex) {
+        case 0:
+            self.completionBlock(nil, @{ UIImagePickerControllerOriginalImage : self.lastPhoto, UIImagePickerControllerEditedImage : self.lastPhoto });
+            break;
+            
+        case 1:
+            [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypeCamera];
+            return;
+            
+        case 2:
+            [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-  UIImage *image = info[(self.allowsEditing ? UIImagePickerControllerEditedImage : UIImagePickerControllerOriginalImage)];
-
-  if (self.sourceType == UIImagePickerControllerSourceTypeCamera && self.saveToCameraRoll) {
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-  }
-
-  // if they chose the photo, and didn't edit, push in a preview
-
-  if (self.allowsEditing == NO && self.sourceType != UIImagePickerControllerSourceTypeCamera) {
-    CZPhotoPreviewViewController *vc = [[CZPhotoPreviewViewController alloc] initWithImage:image cropOverlaySize:self.cropOverlaySize chooseBlock:^(UIImage *chosenImage) {
-      [self.popoverController dismissPopoverAnimated:YES];
-
-      NSMutableDictionary *mutableImageInfo = [info mutableCopy];
-      mutableImageInfo[UIImagePickerControllerEditedImage] = chosenImage;
-
-      self.completionBlock(picker, [mutableImageInfo copy]);
-    } cancelBlock:^{
-      [picker popViewControllerAnimated:YES];
-    }];
-
-    [picker pushViewController:vc animated:YES];
-  }
-  else {
-    NSMutableDictionary *mutableImageInfo = [info mutableCopy];
-
-    if (CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
-      mutableImageInfo[UIImagePickerControllerEditedImage] = [self cropImage:image];
+    UIImage *image = info[(self.allowsEditing ? UIImagePickerControllerEditedImage : UIImagePickerControllerOriginalImage)];
+    
+    if (self.sourceType == UIImagePickerControllerSourceTypeCamera && self.saveToCameraRoll) {
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     }
-
-    [self.popoverController dismissPopoverAnimated:YES];
-
-    self.completionBlock(picker, mutableImageInfo);
-  }
+    
+    // if they chose the photo, and didn't edit, push in a preview
+    
+    if (self.allowsEditing == NO && self.sourceType != UIImagePickerControllerSourceTypeCamera) {
+        CZPhotoPreviewViewController *vc = [[CZPhotoPreviewViewController alloc] initWithImage:image cropOverlaySize:self.cropOverlaySize chooseBlock:^(UIImage *chosenImage) {
+            [self.popoverController dismissPopoverAnimated:YES];
+            
+            NSMutableDictionary *mutableImageInfo = [info mutableCopy];
+            mutableImageInfo[UIImagePickerControllerEditedImage] = chosenImage;
+            
+            self.completionBlock(picker, [mutableImageInfo copy]);
+        } cancelBlock:^{
+            [picker popViewControllerAnimated:YES];
+        }];
+        
+        [picker pushViewController:vc animated:YES];
+    }
+    else {
+        NSMutableDictionary *mutableImageInfo = [info mutableCopy];
+        
+        if (CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
+            mutableImageInfo[UIImagePickerControllerEditedImage] = [self cropImage:image];
+        }
+        
+        [self.popoverController dismissPopoverAnimated:YES];
+        
+        self.completionBlock(picker, mutableImageInfo);
+    }
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
