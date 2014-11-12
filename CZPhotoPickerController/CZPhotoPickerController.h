@@ -14,8 +14,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CTAssetsPickerController.h"
 
 typedef void (^CZPhotoPickerCompletionBlock)(UIImagePickerController *imagePickerController, NSDictionary *imageInfoDict);
+typedef void (^CZPhotoPickerMultipleCompletionBlock)(CTAssetsPickerController *imagePickerController, NSArray *assets);
 
 @interface CZPhotoPickerController : NSObject
 
@@ -49,6 +51,13 @@ typedef void (^CZPhotoPickerCompletionBlock)(UIImagePickerController *imagePicke
  Defaults to YES.
 */
 @property(nonatomic,assign) BOOL saveToCameraRoll;
+
+
+/**
+ Defaults to NO.
+ */
+@property(nonatomic,assign) BOOL multipleSelection;
+@property(nonatomic,copy) CZPhotoPickerMultipleCompletionBlock multipleSelectionCompletionBlock;
 
 @property(nonatomic,assign) UIImagePickerControllerCameraDevice cameraDevice;
 

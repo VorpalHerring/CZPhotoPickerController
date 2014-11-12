@@ -29,7 +29,7 @@ typedef enum {
 
 
 @interface CZPhotoPickerController ()
-<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPopoverControllerDelegate>
+<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPopoverControllerDelegate,CTAssetsPickerControllerDelegate>
 
 @property(nonatomic,strong) ALAssetsLibrary *assetsLibrary;
 @property(nonatomic,copy) CZPhotoPickerCompletionBlock completionBlock;
@@ -88,6 +88,7 @@ typedef enum {
         self.completionBlock = completionBlock;
         self.offerLastTaken = YES;
         self.saveToCameraRoll = YES;
+        self.multipleSelection = NO;
         self.showFromViewController = aViewController;
         self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
         [self observeApplicationDidEnterBackgroundNotification];
@@ -330,8 +331,23 @@ typedef enum {
         mediaUI.cameraOverlayView = overlayView;
     }
     
-    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary)) {
-        self.popoverController = [self makePopoverController:mediaUI];
+    CTAssetsPickerController *multiPicker = nil;
+    if(self.multipleSelection && sourceType == UIImagePickerControllerSourceTypePhotoLibrary)
+    {
+        multiPicker = [[CTAssetsPickerController alloc] init];
+        multiPicker.delegate = self;
+    }
+    
+    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary))
+    {
+        if(self.multipleSelection && sourceType == UIImagePickerControllerSourceTypePhotoLibrary)
+        {
+            self.popoverController = [self makePopoverController:multiPicker];
+        }
+        else
+        {
+            self.popoverController = [self makePopoverController:mediaUI];
+        }
         self.popoverController.delegate = self;
         
         // Bug Workaround (as of iOS 8.0.2) :
@@ -347,9 +363,18 @@ typedef enum {
         });
     }
     else {
-        dispatch_async(dispatch_get_main_queue(), ^{ // ditto. see comment above
-            [self.showFromViewController presentViewController:mediaUI animated:YES completion:nil];
-        });
+        if(self.multipleSelection && sourceType == UIImagePickerControllerSourceTypePhotoLibrary)
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{ // ditto. see comment above
+                [self.showFromViewController presentViewController:multiPicker animated:YES completion:nil];
+            });
+        }
+        else
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{ // ditto. see comment above
+                [self.showFromViewController presentViewController:mediaUI animated:YES completion:nil];
+            });
+        }
     }
 }
 
@@ -429,6 +454,20 @@ typedef enum {
 {
     self.completionBlock(nil, nil);
 }
+
+
+#pragma mark - CTAssetsPickerControllerDelegate
+
+- (void)assetsPickerController:(CTAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets
+{
+    [self dismissAnimated:YES];
+    if(self.multipleSelectionCompletionBlock)
+    {
+        self.multipleSelectionCompletionBlock(picker, assets);
+    }
+}
+
+
 
 #pragma mark - UIPopoverControllerDelegate
 

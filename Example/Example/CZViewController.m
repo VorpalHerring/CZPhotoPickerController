@@ -28,56 +28,72 @@
 
 - (CZPhotoPickerController *)photoController
 {
-  __weak typeof(self) weakSelf = self;
-
-  return [[CZPhotoPickerController alloc] initWithPresentingViewController:self withCompletionBlock:^(UIImagePickerController *imagePickerController, NSDictionary *imageInfoDict) {
-
-    UIImage *image = imageInfoDict[UIImagePickerControllerEditedImage];
-    if (!image) {
-      image = imageInfoDict[UIImagePickerControllerOriginalImage];
-    }
-
-    weakSelf.imageView.image = image;
-
-    [weakSelf.pickPhotoController dismissAnimated:YES];
-    weakSelf.pickPhotoController = nil;
-
-  }];
+    __weak typeof(self) weakSelf = self;
+    
+    CZPhotoPickerController* pc = [[CZPhotoPickerController alloc] initWithPresentingViewController:self withCompletionBlock:^(UIImagePickerController *imagePickerController, NSDictionary *imageInfoDict) {
+        
+        UIImage *image = imageInfoDict[UIImagePickerControllerEditedImage];
+        if (!image) {
+            image = imageInfoDict[UIImagePickerControllerOriginalImage];
+        }
+        
+        weakSelf.imageView.image = image;
+        
+        [weakSelf.pickPhotoController dismissAnimated:YES];
+        weakSelf.pickPhotoController = nil;
+        
+    }];
+    
+    pc.multipleSelection = YES;
+    pc.multipleSelectionCompletionBlock = ^(CTAssetsPickerController* picker, NSArray* assets)
+    {
+        if(assets.count > 0)
+        {
+            ALAsset* asset = assets.firstObject;
+            UIImage *image = [UIImage imageWithCGImage:asset.defaultRepresentation.fullResolutionImage];
+            
+            weakSelf.imageView.image = image;
+        }
+        
+        weakSelf.pickPhotoController = nil;
+    };
+    
+    return pc;
 }
 
 - (IBAction)takePicture:(id)sender
 {
-  if (self.pickPhotoController) {
-    return;
-  }
-
-  self.pickPhotoController = [self photoController];
-  self.pickPhotoController.saveToCameraRoll = NO;
-
-  if (self.cropPreviewSwitch.on) {
-    self.pickPhotoController.allowsEditing = NO;
-    self.pickPhotoController.cropOverlaySize = CGSizeMake(320, 100);
-  }
-  else {
-    self.pickPhotoController.allowsEditing = YES;
-    self.pickPhotoController.cropOverlaySize = CGSizeZero;
-  }
-
-  [self.pickPhotoController showFromBarButtonItem:sender];
+    if (self.pickPhotoController) {
+        return;
+    }
+    
+    self.pickPhotoController = [self photoController];
+    self.pickPhotoController.saveToCameraRoll = NO;
+    
+    if (self.cropPreviewSwitch.on) {
+        self.pickPhotoController.allowsEditing = NO;
+        self.pickPhotoController.cropOverlaySize = CGSizeMake(320, 100);
+    }
+    else {
+        self.pickPhotoController.allowsEditing = YES;
+        self.pickPhotoController.cropOverlaySize = CGSizeZero;
+    }
+    
+    [self.pickPhotoController showFromBarButtonItem:sender];
 }
 
 - (IBAction)toggleCropPreviewSwitch:(id)sender
 {
-  [self.cropPreviewSwitch setOn:!self.cropPreviewSwitch.on animated:YES];
+    [self.cropPreviewSwitch setOn:!self.cropPreviewSwitch.on animated:YES];
 }
 
 #pragma mark - UIViewController
 
 - (void)viewDidLoad
 {
-  [super viewDidLoad];
-
-  self.imageView.clipsToBounds = YES;
+    [super viewDidLoad];
+    
+    self.imageView.clipsToBounds = YES;
 }
 
 @end
