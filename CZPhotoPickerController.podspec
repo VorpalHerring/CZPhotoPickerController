@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files     = 'CZPhotoPickerController'
   s.resource_bundle  = { 'CZPhotoPickerController' => ['CZPhotoPickerController/CZPhotoPreviewViewController.xib'] }
   s.requires_arc     = true
-  s.dependency = 'CTAssetsPickerController'
+  s.dependency 'CTAssetsPickerController'
 end
