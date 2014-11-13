@@ -18,6 +18,7 @@
 
 typedef void (^CZPhotoPickerCompletionBlock)(UIImagePickerController *imagePickerController, NSDictionary *imageInfoDict);
 typedef void (^CZPhotoPickerMultipleCompletionBlock)(CTAssetsPickerController *imagePickerController, NSArray *assets);
+typedef void (^CZPhotoPickerAssetCompletionBlock)(UIImagePickerController *imagePickerController, ALAsset* asset);
 
 @interface CZPhotoPickerController : NSObject
 
@@ -57,7 +58,12 @@ typedef void (^CZPhotoPickerMultipleCompletionBlock)(CTAssetsPickerController *i
  Defaults to NO.
  */
 @property(nonatomic,assign) BOOL multipleSelection;
+/**
+ Defaults to NO.
+ */
+@property(nonatomic,assign) BOOL returnAsset;
 @property(nonatomic,copy) CZPhotoPickerMultipleCompletionBlock multipleSelectionCompletionBlock;
+@property(nonatomic,copy) CZPhotoPickerAssetCompletionBlock assetCompletionBlock;
 
 @property(nonatomic,assign) UIImagePickerControllerCameraDevice cameraDevice;
 

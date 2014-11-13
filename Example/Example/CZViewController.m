@@ -58,6 +58,17 @@
         weakSelf.pickPhotoController = nil;
     };
     
+    pc.returnAsset = YES;
+    pc.assetCompletionBlock = ^(UIImagePickerController* imagePickerController, ALAsset* asset)
+    {
+        UIImage *image = [UIImage imageWithCGImage:asset.defaultRepresentation.fullResolutionImage];
+        
+        weakSelf.imageView.image = image;
+        
+        [weakSelf.pickPhotoController dismissAnimated:YES];
+        weakSelf.pickPhotoController = nil;
+    };
+    
     return pc;
 }
 

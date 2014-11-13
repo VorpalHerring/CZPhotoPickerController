@@ -34,6 +34,7 @@ typedef enum {
 @property(nonatomic,strong) ALAssetsLibrary *assetsLibrary;
 @property(nonatomic,copy) CZPhotoPickerCompletionBlock completionBlock;
 @property(nonatomic,strong) UIImage *lastPhoto;
+@property(nonatomic,strong) ALAsset *lastAsset;
 @property(nonatomic,strong) UIPopoverController *popoverController;
 @property(nonatomic,weak) UIBarButtonItem *showFromBarButtonItem;
 @property(nonatomic,assign) CGRect showFromRect;
@@ -89,6 +90,7 @@ typedef enum {
         self.offerLastTaken = YES;
         self.saveToCameraRoll = YES;
         self.multipleSelection = NO;
+        self.returnAsset = NO;
         self.showFromViewController = aViewController;
         self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
         [self observeApplicationDidEnterBackgroundNotification];
@@ -104,8 +106,16 @@ typedef enum {
     [self.popoverController dismissPopoverAnimated:YES];
     self.popoverController = nil;
     
-    if (self.completionBlock) {
-        self.completionBlock(nil, nil);
+    if (self.completionBlock)
+    {
+        if(self.returnAsset)
+        {
+            self.assetCompletionBlock(nil, nil);
+        }
+        else
+        {
+            self.completionBlock(nil, nil);
+        }
     }
 }
 
@@ -173,7 +183,7 @@ typedef enum {
     }
 }
 
-- (void)getLastPhotoTakenWithCompletionBlock:(void (^)(UIImage *))completionBlock
+- (void)getLastPhotoTakenWithCompletionBlock:(void (^)(UIImage *, ALAsset*))completionBlock
 {
     [self.assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         
@@ -184,7 +194,7 @@ typedef enum {
         group.assetsFilter = [ALAssetsFilter allPhotos];
         
         if ([group numberOfAssets] == 0) {
-            completionBlock(nil);
+            completionBlock(nil, nil);
         }
         else {
             [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *innerStop) {
@@ -196,7 +206,7 @@ typedef enum {
                 }
                 
                 ALAssetRepresentation *representation = [result defaultRepresentation];
-                completionBlock([UIImage imageWithCGImage:[representation fullScreenImage]]);
+                completionBlock([UIImage imageWithCGImage:[representation fullScreenImage]], result);
                 
                 *innerStop = YES;
             }];
@@ -205,7 +215,7 @@ typedef enum {
         *stop = YES;
         
     } failureBlock:^(NSError *error) {
-        completionBlock(nil);
+        completionBlock(nil, nil);
     }];
 }
 
@@ -230,9 +240,10 @@ typedef enum {
         [self showImagePickerWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }
     else {
-        void (^showActionSheetBlock)(UIImage *) = ^(UIImage *lastPhoto) {
+        void (^showActionSheetBlock)(UIImage *, ALAsset*) = ^(UIImage *lastPhoto, ALAsset* lastAsset) {
             
             self.lastPhoto = lastPhoto;
+            self.lastAsset = lastAsset;
             
             UIActionSheet *sheet;
             
@@ -258,7 +269,7 @@ typedef enum {
             [self getLastPhotoTakenWithCompletionBlock:showActionSheetBlock];
         }
         else {
-            showActionSheetBlock(nil);
+            showActionSheetBlock(nil, nil);
         }
     }
 }
@@ -384,8 +395,16 @@ typedef enum {
 {
     actionSheet.delegate = nil;
     
-    if (buttonIndex == actionSheet.cancelButtonIndex) {
-        self.completionBlock(nil, nil);
+    if (buttonIndex == actionSheet.cancelButtonIndex)
+    {
+        if(self.returnAsset)
+        {
+            self.assetCompletionBlock(nil, nil);
+        }
+        else
+        {
+            self.completionBlock(nil, nil);
+        }
         return;
     }
     
@@ -395,7 +414,14 @@ typedef enum {
     
     switch (buttonIndex) {
         case 0:
-            self.completionBlock(nil, @{ UIImagePickerControllerOriginalImage : self.lastPhoto, UIImagePickerControllerEditedImage : self.lastPhoto });
+            if(self.returnAsset)
+            {
+                self.assetCompletionBlock(nil, self.lastAsset);
+            }
+            else
+            {
+                self.completionBlock(nil, @{ UIImagePickerControllerOriginalImage : self.lastPhoto, UIImagePickerControllerEditedImage : self.lastPhoto });
+            }
             break;
             
         case 1:
@@ -430,7 +456,14 @@ typedef enum {
             NSMutableDictionary *mutableImageInfo = [info mutableCopy];
             mutableImageInfo[UIImagePickerControllerEditedImage] = chosenImage;
             
-            self.completionBlock(picker, [mutableImageInfo copy]);
+            if(self.returnAsset)
+            {
+                [self saveAssetAndComplete:picker image:chosenImage];
+            }
+            else
+            {
+                self.completionBlock(picker, [mutableImageInfo copy]);
+            }
         } cancelBlock:^{
             [picker popViewControllerAnimated:YES];
         }];
@@ -439,20 +472,52 @@ typedef enum {
     }
     else {
         NSMutableDictionary *mutableImageInfo = [info mutableCopy];
-        
-        if (CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO) {
-            mutableImageInfo[UIImagePickerControllerEditedImage] = [self cropImage:image];
+         
+        UIImage* croppedImage = image;
+        if (CGSizeEqualToSize(self.cropOverlaySize, CGSizeZero) == NO)
+        {
+            croppedImage = [self cropImage:image];
+            mutableImageInfo[UIImagePickerControllerEditedImage] = croppedImage;
         }
         
         [self.popoverController dismissPopoverAnimated:YES];
         
-        self.completionBlock(picker, mutableImageInfo);
+        if(self.returnAsset)
+        {
+            [self saveAssetAndComplete:picker image:croppedImage];
+        }
+        else
+        {
+            self.completionBlock(picker, mutableImageInfo);
+        }
     }
+}
+
+- (void)saveAssetAndComplete:(UIImagePickerController *)picker image:(UIImage*)image
+{
+    [self.assetsLibrary writeImageToSavedPhotosAlbum:image.CGImage orientation:(ALAssetOrientation)image.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error )
+     {
+         [self.assetsLibrary assetForURL:assetURL resultBlock:^(ALAsset *asset)
+          {
+              self.assetCompletionBlock(picker, asset);
+          }
+                            failureBlock:^(NSError *error)
+          {
+              self.assetCompletionBlock(nil, nil);
+          }];
+     }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    self.completionBlock(nil, nil);
+    if(self.returnAsset)
+    {
+        self.assetCompletionBlock(nil, nil);
+    }
+    else
+    {
+        self.completionBlock(nil, nil);
+    }
 }
 
 
@@ -474,7 +539,14 @@ typedef enum {
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
 {
     self.popoverController = nil;
-    self.completionBlock(nil, nil);
+    if(self.returnAsset)
+    {
+        self.assetCompletionBlock(nil, nil);
+    }
+    else
+    {
+        self.completionBlock(nil, nil);
+    }
 }
 
 @end
