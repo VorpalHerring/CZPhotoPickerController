@@ -349,6 +349,7 @@ typedef enum {
         multiPicker = [[CTAssetsPickerController alloc] init];
         multiPicker.delegate = self;
         multiPicker.assetsFilter = [ALAssetsFilter allPhotos];
+        multiPicker.assetsLibrary = self.assetsLibrary;
     }
     
     if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && (sourceType == UIImagePickerControllerSourceTypePhotoLibrary))
