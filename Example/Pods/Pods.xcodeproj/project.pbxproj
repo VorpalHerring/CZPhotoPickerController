@@ -1,2853 +1,947 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>017F33028C96A03A59238EB1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1B0A8DD0EF12D4765D8E7B78</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0247EA49372CC3EF79D7D5EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerPlay.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02D13504273A0CEE4C5ACD56</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>788E3023B609B1EB0EC5BB71</string>
-				<string>3449B5968F564219922F4DA5</string>
-				<string>086AA2DCB3D7CFBF1E7D6C71</string>
-				<string>2519134321ECA5BD7FF9D30A</string>
-				<string>A97D8A5F86A7D38F6E958FE4</string>
-				<string>20A79BF0F4F648EFB2D15C4D</string>
-				<string>B2B64FEBA0232FB8FDE168F9</string>
-				<string>0F5FEC1078138A51ECCAF1C8</string>
-				<string>494919A4ACF2ECE6480068C8</string>
-				<string>D116697D918374ED17F62FC3</string>
-				<string>2BD0E35B7A9CEFC86016585E</string>
-				<string>7537AEB680B231EE92FF93F7</string>
-				<string>8C8193C0986E6E9953AF5CE8</string>
-				<string>8F7679B2F413CEC2E519CDCE</string>
-				<string>38433BF6967CEDEB891E40C9</string>
-				<string>51D71538407E178C9AE403AB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>060C03ABA1EFC9BFB6AD4681</key>
-		<dict>
-			<key>fileRef</key>
-			<string>69A81C6895E27CEF7DCBDE70</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>07B5BB5136496D91F88C6ECD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerEmptyAsset@2x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>086AA2DCB3D7CFBF1E7D6C71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BABF1785F85EEB1B10E29D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>08AA5311EE2116439648FCA6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CAF83BCC975203BC5A0CD9EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>08E5C097B5BAA3B10BC8138D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C482C68FE3E7AE4DDE8D1822</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C5A5C869E6CE04C45E1FEBE3</string>
-				<string>625474A5F0FA55A6236D4E03</string>
-				<string>5C572AE2B64A284887E3094D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>8D15AC0EDC63992AD7A93B2E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-CZPhotoPickerController</string>
-			<key>productName</key>
-			<string>Pods-CZPhotoPickerController</string>
-			<key>productReference</key>
-			<string>75BAB91FEC81EBD6548833A2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>09C6A5B5BD7D968EB02BFFFC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerChecked@2x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AE1941FFA93C0DE4DF47FB4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ALAsset+assetType.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAsset+assetType.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0BABF1785F85EEB1B10E29D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ALAsset+isEqual.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAsset+isEqual.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C30DEBF2C657AF63DC6ACA7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>284107301BF9EEC7E1A4EE45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>0C592A342582FB3B30D08762</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsViewController.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F5FEC1078138A51ECCAF1C8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED8F9E74BF2416E820A0162C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1255022809267A9FFDEA12CB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FBCDB553CEEF0E690749155B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>4D2223E2A01A8F20FC7D4A4E</string>
-			<key>remoteInfo</key>
-			<string>CZPhotoPickerController</string>
-		</dict>
-		<key>1266236AAAD87117E5CE0D8E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2ECD25FAA84F2E9662AAF03A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>12D9FD5E410FDEC42BBA8E21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1814702B12224DA7D12EC43E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>14F5153968655CBEA2A14D79</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ALAsset+assetType.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAsset+assetType.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1669C0810AA95E7D25772BD5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>615D633AFEBF62AB65A851DE</string>
-				<string>FAD01776A0EC1DF984975780</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>16C858F77F66FADE23B8E009</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>2ED65AD0887BF85CC4C4E2E1</string>
-			<key>buildPhases</key>
-			<array>
-				<string>25B49E1A353BD1CC1BE08A7A</string>
-				<string>316641C6DDF4C9E179D614FA</string>
-				<string>02D13504273A0CEE4C5ACD56</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-CTAssetsPickerController</string>
-			<key>productName</key>
-			<string>Pods-CTAssetsPickerController</string>
-			<key>productReference</key>
-			<string>718FC8B4BE33F5C4102C08C0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>1814702B12224DA7D12EC43E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsSupplementaryView.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsSupplementaryView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>183097A4FA3361C80CFE31E5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDBE3D0F477B4104E5C5F288</string>
-				<string>1E7575D98BA8554E615442F4</string>
-				<string>D4E8E7701CD5D0723A9644DC</string>
-				<string>D8CC0AFC4283C565C2EA070F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pods-CZPhotoPickerController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18F815E23F9CB4B4E03C6042</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CTAssetsPickerController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1A52A162D59C98664B5C3245</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIAccessDeniedViewLock@2x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/UIAccessDeniedViewLock@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1AA4EAFD691B8C1D38052210</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ALAsset+accessibilityLabel.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAsset+accessibilityLabel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1AFB180622E6DEC95E10A524</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1B0A8DD0EF12D4765D8E7B78</key>
-		<dict>
-			<key>fileRef</key>
-			<string>721551B9CF8133F86FECECCE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1D70F3510DB2DA98750CF99C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetItemViewController.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetItemViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E7575D98BA8554E615442F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CZPhotoPickerController-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>20A79BF0F4F648EFB2D15C4D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7CEC1F8C338AC2CB1EEB81A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2519134321ECA5BD7FF9D30A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F11AE759B8396AAED8F15CB8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>258E568EF45B31D964F13B8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3AF9333083177377D8F264C8</string>
-				<string>3F62833B84FAE5928E65AB5B</string>
-				<string>DB30EB4E093BAD7CD8FB4C28</string>
-				<string>6987830F70AAB83213BE4575</string>
-				<string>4386E729412D72106F46C8AA</string>
-				<string>60FB2D2FE6FD4CC901311F9B</string>
-				<string>CAF83BCC975203BC5A0CD9EE</string>
-				<string>CCF9595D161F051D342B99BB</string>
-				<string>30A377A628D89F0205F2C4DC</string>
-				<string>F5BD2958703C4C90ACBA5455</string>
-				<string>9DFCF9272628ED3DBEF5CBF4</string>
-				<string>183097A4FA3361C80CFE31E5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CZPhotoPickerController</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25B49E1A353BD1CC1BE08A7A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E0C2FB439272C5194B4E6F45</string>
-				<string>B9E1DD7A773B3124C45C827B</string>
-				<string>4A4E987B0A3B08C20B7E7803</string>
-				<string>5FCB40CFCF6F5D2E5B75876E</string>
-				<string>662D8B86B5136AEAC7E3EB04</string>
-				<string>4F62782707826E2C539BA678</string>
-				<string>9A29EDB69DA29B1C4B368CCD</string>
-				<string>41FA434F0FA59095438C5FB2</string>
-				<string>6F688A9362266BF5537033CA</string>
-				<string>1266236AAAD87117E5CE0D8E</string>
-				<string>12D9FD5E410FDEC42BBA8E21</string>
-				<string>A1DB67E8BB58CCC55940F76C</string>
-				<string>DAA6754F5668D7815F3366ED</string>
-				<string>0C30DEBF2C657AF63DC6ACA7</string>
-				<string>060C03ABA1EFC9BFB6AD4681</string>
-				<string>B3EB702FC7DD0E4DA553EE0F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>27C45E9FBFF30C6FDE3A5F43</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsViewCell.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>284107301BF9EEC7E1A4EE45</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsViewControllerTransition.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsViewControllerTransition.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>29FBBC91126E0008E1C5DA01</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5347EAB190AC7D5DBDB99CCC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BD0E35B7A9CEFC86016585E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FB9E54672B10AFFA1815F3A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2ECD25FAA84F2E9662AAF03A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsPickerController.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPickerController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2ED65AD0887BF85CC4C4E2E1</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F4112E26759651F9BC7CBA75</string>
-				<string>3D8D024F32EC599CD90AA936</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>30A377A628D89F0205F2C4DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CZPhotoPreviewViewController.h</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPreviewViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>316641C6DDF4C9E179D614FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E14A6A7DB1867DFFA6C42432</string>
-				<string>57E1EF343BF7B46F71A83CA2</string>
-				<string>648C7B416BEAE9C1BC0F84A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>319298482A8D6FF80DA82691</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3449B5968F564219922F4DA5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AE1941FFA93C0DE4DF47FB4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>35204B2B02A3554C08E1B903</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-CTAssetsPickerController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>359749D17D48F35EEEC966CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AssetsLibrary.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>376D60BBEC56F5F6A08A0407</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsViewControllerTransition.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsViewControllerTransition.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37BEEE7FAE0B86E8B3EDF354</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38433BF6967CEDEB891E40C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>376D60BBEC56F5F6A08A0407</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3AF9333083177377D8F264C8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CZCropPreviewOverlayView.h</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZCropPreviewOverlayView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D8D024F32EC599CD90AA936</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>536719C25F698FCA90494771</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-CTAssetsPickerController/Pods-CTAssetsPickerController-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3E0F44156D1CC24271BB3611</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerChecked@3x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E595409448F660F4EDA5E2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB30EB4E093BAD7CD8FB4C28</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F62833B84FAE5928E65AB5B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CZCropPreviewOverlayView.m</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZCropPreviewOverlayView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>416C784351A44A2786F04D46</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A02B104D3F9D7139AF1DAB86</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>41A4F4BEF4B0FED328B08CC3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsPickerCommon.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPickerCommon.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>41FA434F0FA59095438C5FB2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5EF8874616810C506C3228E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>4386E729412D72106F46C8AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CZPhotoPickerController.h</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPickerController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>494919A4ACF2ECE6480068C8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F395AE2AC6C798FA5D292A97</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49A696434222DE0A4B531D41</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIAccessDeniedViewLock.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/UIAccessDeniedViewLock.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D5926605BCECB582EF753E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1E7575D98BA8554E615442F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-CZPhotoPickerController/Pods-CZPhotoPickerController-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>4A4E987B0A3B08C20B7E7803</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6AC8F1B3CBFFE46CC0BF09B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>4A6CE0E26E9F64735BEE06F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC7EB8B069CBC9453EF577B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4C3A8DCDD70BF973CD7AB9B4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8C9236FDFF27DD081DDB9A48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4CB9FB8256257B629D78008D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CZPhotoPickerController.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>4D2223E2A01A8F20FC7D4A4E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B3B79A7222C9C80E4611FF88</string>
-			<key>buildPhases</key>
-			<array>
-				<string>DCEFC65880B02C4C534081BF</string>
-				<string>816544CB11462BA3DBC667B1</string>
-				<string>017F33028C96A03A59238EB1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CZPhotoPickerController</string>
-			<key>productName</key>
-			<string>CZPhotoPickerController</string>
-			<key>productReference</key>
-			<string>4CB9FB8256257B629D78008D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>4F62782707826E2C539BA678</key>
-		<dict>
-			<key>fileRef</key>
-			<string>70E81A3E70B9AF2397A278CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>51D71538407E178C9AE403AB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>657EF141189CDAA105B5AC9C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5347EAB190AC7D5DBDB99CCC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>37BEEE7FAE0B86E8B3EDF354</string>
-				<string>69EE9C8B75ED3FD4B249703E</string>
-				<string>D2F1488E5BE91CA18F1C3075</string>
-				<string>C2B95720A4BD9AEAD180A8C1</string>
-				<string>660DAEA7FE3A7411102775D3</string>
-				<string>319298482A8D6FF80DA82691</string>
-				<string>B0341C80BCFFEABB4B0E1125</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>536719C25F698FCA90494771</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CTAssetsPickerController-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>549D17DF0F417EE8FAE64762</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>16C858F77F66FADE23B8E009</string>
-			<key>targetProxy</key>
-			<string>889F1450213B2DF950D3A9F9</string>
-		</dict>
-		<key>56D4B7485F7F0BEED49765E8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerPlay@3x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5796634B360592384EAFF58F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>359749D17D48F35EEEC966CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>57E1EF343BF7B46F71A83CA2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC7EB8B069CBC9453EF577B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5C572AE2B64A284887E3094D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D7571492F91B4F8CE2B07B5D</string>
-				<string>3E595409448F660F4EDA5E2C</string>
-				<string>67EA2AAE18C990B2B784F272</string>
-				<string>08AA5311EE2116439648FCA6</string>
-				<string>AEA4968E05169ADD0FCAAFB7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5D6738283A5DFAF06A35B1BB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18F815E23F9CB4B4E03C6042</string>
-				<string>536719C25F698FCA90494771</string>
-				<string>35204B2B02A3554C08E1B903</string>
-				<string>772F063753E666B94CCB178A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-CTAssetsPickerController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5EF8874616810C506C3228E1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsGroupViewController.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsGroupViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5FCB40CFCF6F5D2E5B75876E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EBDDB5139B743591167AF453</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>60FB2D2FE6FD4CC901311F9B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CZPhotoPickerController.m</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPickerController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>615D633AFEBF62AB65A851DE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>319298482A8D6FF80DA82691</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>625474A5F0FA55A6236D4E03</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5796634B360592384EAFF58F</string>
-				<string>4A6CE0E26E9F64735BEE06F7</string>
-				<string>F108D4C3D18CE13385617BA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>648C7B416BEAE9C1BC0F84A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DBABC3CC37AF955664070C10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>657EF141189CDAA105B5AC9C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSDateFormatter+timeIntervalFormatter.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/NSDateFormatter+timeIntervalFormatter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>660DAEA7FE3A7411102775D3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>662D8B86B5136AEAC7E3EB04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D70F3510DB2DA98750CF99C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>67EA2AAE18C990B2B784F272</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4386E729412D72106F46C8AA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6987830F70AAB83213BE4575</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CZCroppingScrollView.m</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZCroppingScrollView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69A81C6895E27CEF7DCBDE70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSDateFormatter+timeIntervalFormatter.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/NSDateFormatter+timeIntervalFormatter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69EE9C8B75ED3FD4B249703E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A2A32339E2192E7D6FFBE12</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6A77378312CD12E85187A4C9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsGroupViewCell.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsGroupViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6AC8F1B3CBFFE46CC0BF09B6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ALAsset+isEqual.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAsset+isEqual.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6D505A462FE37A327D834E43</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetItemViewController.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetItemViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F688A9362266BF5537033CA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3743E5F253F5CD3477065C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>70CBAC82AE6FCC8EA3357C64</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>70E81A3E70B9AF2397A278CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetScrollView.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetScrollView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>718FC8B4BE33F5C4102C08C0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-CTAssetsPickerController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>721551B9CF8133F86FECECCE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>CZPhotoPreviewViewController.xib</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPreviewViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7537AEB680B231EE92FF93F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9E9D6F8B4BD0E78A5B08C4C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>75BAB91FEC81EBD6548833A2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-CZPhotoPickerController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>75E0B65271A1B19A6E204BE7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>70CBAC82AE6FCC8EA3357C64</string>
-				<string>6A2A32339E2192E7D6FFBE12</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7703DBE7E124F308A49C8867</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>08E5C097B5BAA3B10BC8138D</string>
-			<key>targetProxy</key>
-			<string>CFD47217A6E5E6E10D7F6195</string>
-		</dict>
-		<key>772F063753E666B94CCB178A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-CTAssetsPickerController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>788E3023B609B1EB0EC5BB71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1AA4EAFD691B8C1D38052210</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7CEC1F8C338AC2CB1EEB81A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetScrollView.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetScrollView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>816544CB11462BA3DBC667B1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>825346B86A05F4EA6B84CD37</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MobileCoreServices.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>889F1450213B2DF950D3A9F9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FBCDB553CEEF0E690749155B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>16C858F77F66FADE23B8E009</string>
-			<key>remoteInfo</key>
-			<string>Pods-CTAssetsPickerController</string>
-		</dict>
-		<key>8BAE9500BBD51BF8D30E262C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsViewController.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C8193C0986E6E9953AF5CE8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8D5E3939F17A2728F1846BBB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8C9236FDFF27DD081DDB9A48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>359749D17D48F35EEEC966CD</string>
-				<string>BC7EB8B069CBC9453EF577B0</string>
-				<string>DBABC3CC37AF955664070C10</string>
-				<string>825346B86A05F4EA6B84CD37</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8D15AC0EDC63992AD7A93B2E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>4D2223E2A01A8F20FC7D4A4E</string>
-			<key>targetProxy</key>
-			<string>1255022809267A9FFDEA12CB</string>
-		</dict>
-		<key>8D5E3939F17A2728F1846BBB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsViewCell.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F7679B2F413CEC2E519CDCE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8BAE9500BBD51BF8D30E262C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8FBD75ECA9E05B139DC0A5EA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5BD2958703C4C90ACBA5455</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>99BB028039BD814D288C0CFD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerVideo@2x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A29EDB69DA29B1C4B368CCD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A77378312CD12E85187A4C9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>9DFCF9272628ED3DBEF5CBF4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>721551B9CF8133F86FECECCE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9E9D6F8B4BD0E78A5B08C4C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsSupplementaryView.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsSupplementaryView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A02B104D3F9D7139AF1DAB86</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2F1488E5BE91CA18F1C3075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A1DB67E8BB58CCC55940F76C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>27C45E9FBFF30C6FDE3A5F43</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>A3743E5F253F5CD3477065C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CTAssetsPageViewController.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPageViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4EE1CD1FA1BD7498855C60D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A53F047D9DFC3B74272D05C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsGroupViewCell.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsGroupViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9052BAF80D29D5F294C198F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerPlay@2x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A97D8A5F86A7D38F6E958FE4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6D505A462FE37A327D834E43</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AD560F99A39E2B7CDE4C9595</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerEmptyCell.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AEA4968E05169ADD0FCAAFB7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30A377A628D89F0205F2C4DC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B0341C80BCFFEABB4B0E1125</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B043E31DB4F8FAAE406D3F4F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>B2B64FEBA0232FB8FDE168F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A53F047D9DFC3B74272D05C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B3B79A7222C9C80E4611FF88</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D747D336E86F7EA4D84DD70C</string>
-				<string>A4EE1CD1FA1BD7498855C60D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B3EB702FC7DD0E4DA553EE0F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>35204B2B02A3554C08E1B903</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B47E991670E2A415EA3333D3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1669C0810AA95E7D25772BD5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>416C784351A44A2786F04D46</string>
-				<string>D7B40FF34E00D60BCBE0C027</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>549D17DF0F417EE8FAE64762</string>
-				<string>7703DBE7E124F308A49C8867</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>1AFB180622E6DEC95E10A524</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>B9E1DD7A773B3124C45C827B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>14F5153968655CBEA2A14D79</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>BC7EB8B069CBC9453EF577B0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>BCEA1EC3785CFBCFDD1D6742</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerVideo.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0974F353DA4690CDDA1ED19</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerEmptyAsset@3x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C2B95720A4BD9AEAD180A8C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3442AC7F1CF28FBB7FF72D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerVideo@3x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C482C68FE3E7AE4DDE8D1822</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F29DAA473FACCE0DAC28D850</string>
-				<string>49D5926605BCECB582EF753E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C5A5C869E6CE04C45E1FEBE3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CCD3CF9F68AF86E83B9C542A</string>
-				<string>C728E98E438FD386E8377E3F</string>
-				<string>E5B23C5AB3C605C3A8BAAB7D</string>
-				<string>F9A03BC4329CCAC2B67C87D8</string>
-				<string>8FBD75ECA9E05B139DC0A5EA</string>
-				<string>D1D201180CEE35CF676CC4CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C728E98E438FD386E8377E3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6987830F70AAB83213BE4575</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>CAF83BCC975203BC5A0CD9EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CZPhotoPickerPermissionAlert.h</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPickerPermissionAlert.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCD3CF9F68AF86E83B9C542A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F62833B84FAE5928E65AB5B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>CCF9595D161F051D342B99BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CZPhotoPickerPermissionAlert.m</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPickerPermissionAlert.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CE85C91530D822D6DBA8A733</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>258E568EF45B31D964F13B8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFD47217A6E5E6E10D7F6195</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FBCDB553CEEF0E690749155B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>08E5C097B5BAA3B10BC8138D</string>
-			<key>remoteInfo</key>
-			<string>Pods-CZPhotoPickerController</string>
-		</dict>
-		<key>D116697D918374ED17F62FC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>41A4F4BEF4B0FED328B08CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D1D201180CEE35CF676CC4CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4E8E7701CD5D0723A9644DC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2C70AF5FC87143467B09EB5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerEmptyAsset.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2F1488E5BE91CA18F1C3075</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4E8E7701CD5D0723A9644DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-CZPhotoPickerController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D747D336E86F7EA4D84DD70C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D7571492F91B4F8CE2B07B5D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3AF9333083177377D8F264C8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D7B40FF34E00D60BCBE0C027</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FB3B0DBCA23056A7045E138B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D8CC0AFC4283C565C2EA070F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-CZPhotoPickerController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA548F0721F2AC9C01A5856B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerEmptyCell@2x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DAA6754F5668D7815F3366ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C592A342582FB3B30D08762</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>DB30EB4E093BAD7CD8FB4C28</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CZCroppingScrollView.h</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZCroppingScrollView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBABC3CC37AF955664070C10</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MediaPlayer.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>DCEFC65880B02C4C534081BF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E0C2FB439272C5194B4E6F45</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EED5643E5548C1619DDC6AE6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>E14A6A7DB1867DFFA6C42432</key>
-		<dict>
-			<key>fileRef</key>
-			<string>359749D17D48F35EEEC966CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1FDBD22290902C97F47DE99</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4CB9FB8256257B629D78008D</string>
-				<string>1AFB180622E6DEC95E10A524</string>
-				<string>718FC8B4BE33F5C4102C08C0</string>
-				<string>75BAB91FEC81EBD6548833A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5B23C5AB3C605C3A8BAAB7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>60FB2D2FE6FD4CC901311F9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>E85F1A792929860DBD888486</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F51ED7EF4D97E24D5D58F829</string>
-				<string>09C6A5B5BD7D968EB02BFFFC</string>
-				<string>3E0F44156D1CC24271BB3611</string>
-				<string>D2C70AF5FC87143467B09EB5</string>
-				<string>07B5BB5136496D91F88C6ECD</string>
-				<string>C0974F353DA4690CDDA1ED19</string>
-				<string>AD560F99A39E2B7CDE4C9595</string>
-				<string>DA548F0721F2AC9C01A5856B</string>
-				<string>F211E307EC07F4AC60F1093C</string>
-				<string>0247EA49372CC3EF79D7D5EA</string>
-				<string>A9052BAF80D29D5F294C198F</string>
-				<string>56D4B7485F7F0BEED49765E8</string>
-				<string>BCEA1EC3785CFBCFDD1D6742</string>
-				<string>99BB028039BD814D288C0CFD</string>
-				<string>C3442AC7F1CF28FBB7FF72D6</string>
-				<string>49A696434222DE0A4B531D41</string>
-				<string>1A52A162D59C98664B5C3245</string>
-				<string>E8D9D91D2BBFF297009AF8AE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8D9D91D2BBFF297009AF8AE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIAccessDeniedViewLock@3x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/UIAccessDeniedViewLock@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EBDDB5139B743591167AF453</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ALAssetsGroup+isEqual.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAssetsGroup+isEqual.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EBEB467FDAF257C05BCA859D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1AA4EAFD691B8C1D38052210</string>
-				<string>EED5643E5548C1619DDC6AE6</string>
-				<string>0AE1941FFA93C0DE4DF47FB4</string>
-				<string>14F5153968655CBEA2A14D79</string>
-				<string>0BABF1785F85EEB1B10E29D4</string>
-				<string>6AC8F1B3CBFFE46CC0BF09B6</string>
-				<string>F11AE759B8396AAED8F15CB8</string>
-				<string>EBDDB5139B743591167AF453</string>
-				<string>6D505A462FE37A327D834E43</string>
-				<string>1D70F3510DB2DA98750CF99C</string>
-				<string>7CEC1F8C338AC2CB1EEB81A9</string>
-				<string>70E81A3E70B9AF2397A278CD</string>
-				<string>A53F047D9DFC3B74272D05C0</string>
-				<string>6A77378312CD12E85187A4C9</string>
-				<string>ED8F9E74BF2416E820A0162C</string>
-				<string>5EF8874616810C506C3228E1</string>
-				<string>F395AE2AC6C798FA5D292A97</string>
-				<string>A3743E5F253F5CD3477065C3</string>
-				<string>41A4F4BEF4B0FED328B08CC3</string>
-				<string>FB9E54672B10AFFA1815F3A0</string>
-				<string>2ECD25FAA84F2E9662AAF03A</string>
-				<string>9E9D6F8B4BD0E78A5B08C4C3</string>
-				<string>1814702B12224DA7D12EC43E</string>
-				<string>8D5E3939F17A2728F1846BBB</string>
-				<string>27C45E9FBFF30C6FDE3A5F43</string>
-				<string>8BAE9500BBD51BF8D30E262C</string>
-				<string>0C592A342582FB3B30D08762</string>
-				<string>376D60BBEC56F5F6A08A0407</string>
-				<string>284107301BF9EEC7E1A4EE45</string>
-				<string>657EF141189CDAA105B5AC9C</string>
-				<string>69A81C6895E27CEF7DCBDE70</string>
-				<string>E85F1A792929860DBD888486</string>
-				<string>5D6738283A5DFAF06A35B1BB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CTAssetsPickerController</string>
-			<key>path</key>
-			<string>CTAssetsPickerController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED8F9E74BF2416E820A0162C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsGroupViewController.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsGroupViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDBE3D0F477B4104E5C5F288</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CZPhotoPickerController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EED5643E5548C1619DDC6AE6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ALAsset+accessibilityLabel.m</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAsset+accessibilityLabel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F108D4C3D18CE13385617BA5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>825346B86A05F4EA6B84CD37</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F11AE759B8396AAED8F15CB8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ALAssetsGroup+isEqual.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/ALAssetsGroup+isEqual.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F211E307EC07F4AC60F1093C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerEmptyCell@3x.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F29DAA473FACCE0DAC28D850</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1E7575D98BA8554E615442F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-CZPhotoPickerController/Pods-CZPhotoPickerController-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F395AE2AC6C798FA5D292A97</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsPageViewController.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPageViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F4112E26759651F9BC7CBA75</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>536719C25F698FCA90494771</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-CTAssetsPickerController/Pods-CTAssetsPickerController-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F4EE3D21A91E772FAF805F64</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EBEB467FDAF257C05BCA859D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F51ED7EF4D97E24D5D58F829</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CTAssetsPickerChecked.png</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5BD2958703C4C90ACBA5455</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CZPhotoPreviewViewController.m</string>
-			<key>path</key>
-			<string>CZPhotoPickerController/CZPhotoPreviewViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F752072B3BE6BDAACA67F490</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B043E31DB4F8FAAE406D3F4F</string>
-				<string>CE85C91530D822D6DBA8A733</string>
-				<string>4C3A8DCDD70BF973CD7AB9B4</string>
-				<string>F4EE3D21A91E772FAF805F64</string>
-				<string>E1FDBD22290902C97F47DE99</string>
-				<string>29FBBC91126E0008E1C5DA01</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F9A03BC4329CCAC2B67C87D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CCF9595D161F051D342B99BB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>FAD01776A0EC1DF984975780</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B0341C80BCFFEABB4B0E1125</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FB3B0DBCA23056A7045E138B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC7EB8B069CBC9453EF577B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FB9E54672B10AFFA1815F3A0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CTAssetsPickerController.h</string>
-			<key>path</key>
-			<string>CTAssetsPickerController/CTAssetsPickerController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FBCDB553CEEF0E690749155B</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>75E0B65271A1B19A6E204BE7</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>F752072B3BE6BDAACA67F490</string>
-			<key>productRefGroup</key>
-			<string>E1FDBD22290902C97F47DE99</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>4D2223E2A01A8F20FC7D4A4E</string>
-				<string>B47E991670E2A415EA3333D3</string>
-				<string>16C858F77F66FADE23B8E009</string>
-				<string>08E5C097B5BAA3B10BC8138D</string>
-			</array>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FBCDB553CEEF0E690749155B</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060C03ABA1EFC9BFB6AD4681 /* NSDateFormatter+timeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A81C6895E27CEF7DCBDE70 /* NSDateFormatter+timeIntervalFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		086AA2DCB3D7CFBF1E7D6C71 /* ALAsset+isEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BABF1785F85EEB1B10E29D4 /* ALAsset+isEqual.h */; };
+		08AA5311EE2116439648FCA6 /* CZPhotoPickerPermissionAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF83BCC975203BC5A0CD9EE /* CZPhotoPickerPermissionAlert.h */; };
+		0C30DEBF2C657AF63DC6ACA7 /* CTAssetsViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 284107301BF9EEC7E1A4EE45 /* CTAssetsViewControllerTransition.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0F5FEC1078138A51ECCAF1C8 /* CTAssetsGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8F9E74BF2416E820A0162C /* CTAssetsGroupViewController.h */; };
+		1266236AAAD87117E5CE0D8E /* CTAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD25FAA84F2E9662AAF03A /* CTAssetsPickerController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		12D9FD5E410FDEC42BBA8E21 /* CTAssetsSupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814702B12224DA7D12EC43E /* CTAssetsSupplementaryView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1B0A8DD0EF12D4765D8E7B78 /* CZPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721551B9CF8133F86FECECCE /* CZPhotoPreviewViewController.xib */; };
+		20A79BF0F4F648EFB2D15C4D /* CTAssetScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEC1F8C338AC2CB1EEB81A9 /* CTAssetScrollView.h */; };
+		22F7F7881A1593A0002F9FC9 /* ALAssetsLibrary+Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F7F7851A159270002F9FC9 /* ALAssetsLibrary+Singleton.h */; };
+		22F7F7891A1593A0002F9FC9 /* ALAssetsLibrary+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F7F7861A159270002F9FC9 /* ALAssetsLibrary+Singleton.m */; };
+		2519134321ECA5BD7FF9D30A /* ALAssetsGroup+isEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = F11AE759B8396AAED8F15CB8 /* ALAssetsGroup+isEqual.h */; };
+		2BD0E35B7A9CEFC86016585E /* CTAssetsPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9E54672B10AFFA1815F3A0 /* CTAssetsPickerController.h */; };
+		3449B5968F564219922F4DA5 /* ALAsset+assetType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE1941FFA93C0DE4DF47FB4 /* ALAsset+assetType.h */; };
+		38433BF6967CEDEB891E40C9 /* CTAssetsViewControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 376D60BBEC56F5F6A08A0407 /* CTAssetsViewControllerTransition.h */; };
+		3E595409448F660F4EDA5E2C /* CZCroppingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB30EB4E093BAD7CD8FB4C28 /* CZCroppingScrollView.h */; };
+		41FA434F0FA59095438C5FB2 /* CTAssetsGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8874616810C506C3228E1 /* CTAssetsGroupViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		494919A4ACF2ECE6480068C8 /* CTAssetsPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F395AE2AC6C798FA5D292A97 /* CTAssetsPageViewController.h */; };
+		4A4E987B0A3B08C20B7E7803 /* ALAsset+isEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8F1B3CBFFE46CC0BF09B6 /* ALAsset+isEqual.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4A6CE0E26E9F64735BEE06F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EB8B069CBC9453EF577B0 /* Foundation.framework */; };
+		4F62782707826E2C539BA678 /* CTAssetScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E81A3E70B9AF2397A278CD /* CTAssetScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		51D71538407E178C9AE403AB /* NSDateFormatter+timeIntervalFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 657EF141189CDAA105B5AC9C /* NSDateFormatter+timeIntervalFormatter.h */; };
+		5796634B360592384EAFF58F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359749D17D48F35EEEC966CD /* AssetsLibrary.framework */; };
+		57E1EF343BF7B46F71A83CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EB8B069CBC9453EF577B0 /* Foundation.framework */; };
+		5FCB40CFCF6F5D2E5B75876E /* ALAssetsGroup+isEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDDB5139B743591167AF453 /* ALAssetsGroup+isEqual.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		648C7B416BEAE9C1BC0F84A0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBABC3CC37AF955664070C10 /* MediaPlayer.framework */; };
+		662D8B86B5136AEAC7E3EB04 /* CTAssetItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D70F3510DB2DA98750CF99C /* CTAssetItemViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		67EA2AAE18C990B2B784F272 /* CZPhotoPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4386E729412D72106F46C8AA /* CZPhotoPickerController.h */; };
+		6F688A9362266BF5537033CA /* CTAssetsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3743E5F253F5CD3477065C3 /* CTAssetsPageViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7537AEB680B231EE92FF93F7 /* CTAssetsSupplementaryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9D6F8B4BD0E78A5B08C4C3 /* CTAssetsSupplementaryView.h */; };
+		788E3023B609B1EB0EC5BB71 /* ALAsset+accessibilityLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA4EAFD691B8C1D38052210 /* ALAsset+accessibilityLabel.h */; };
+		8C8193C0986E6E9953AF5CE8 /* CTAssetsViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5E3939F17A2728F1846BBB /* CTAssetsViewCell.h */; };
+		8F7679B2F413CEC2E519CDCE /* CTAssetsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAE9500BBD51BF8D30E262C /* CTAssetsViewController.h */; };
+		8FBD75ECA9E05B139DC0A5EA /* CZPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD2958703C4C90ACBA5455 /* CZPhotoPreviewViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9A29EDB69DA29B1C4B368CCD /* CTAssetsGroupViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A77378312CD12E85187A4C9 /* CTAssetsGroupViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A02B104D3F9D7139AF1DAB86 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1488E5BE91CA18F1C3075 /* Pods-dummy.m */; };
+		A1DB67E8BB58CCC55940F76C /* CTAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C45E9FBFF30C6FDE3A5F43 /* CTAssetsViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A97D8A5F86A7D38F6E958FE4 /* CTAssetItemViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D505A462FE37A327D834E43 /* CTAssetItemViewController.h */; };
+		AEA4968E05169ADD0FCAAFB7 /* CZPhotoPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A377A628D89F0205F2C4DC /* CZPhotoPreviewViewController.h */; };
+		B2B64FEBA0232FB8FDE168F9 /* CTAssetsGroupViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A53F047D9DFC3B74272D05C0 /* CTAssetsGroupViewCell.h */; };
+		B3EB702FC7DD0E4DA553EE0F /* Pods-CTAssetsPickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35204B2B02A3554C08E1B903 /* Pods-CTAssetsPickerController-dummy.m */; };
+		B9E1DD7A773B3124C45C827B /* ALAsset+assetType.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F5153968655CBEA2A14D79 /* ALAsset+assetType.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C728E98E438FD386E8377E3F /* CZCroppingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6987830F70AAB83213BE4575 /* CZCroppingScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		CCD3CF9F68AF86E83B9C542A /* CZCropPreviewOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F62833B84FAE5928E65AB5B /* CZCropPreviewOverlayView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D116697D918374ED17F62FC3 /* CTAssetsPickerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A4F4BEF4B0FED328B08CC3 /* CTAssetsPickerCommon.h */; };
+		D1D201180CEE35CF676CC4CD /* Pods-CZPhotoPickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E8E7701CD5D0723A9644DC /* Pods-CZPhotoPickerController-dummy.m */; };
+		D7571492F91B4F8CE2B07B5D /* CZCropPreviewOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF9333083177377D8F264C8 /* CZCropPreviewOverlayView.h */; };
+		DAA6754F5668D7815F3366ED /* CTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C592A342582FB3B30D08762 /* CTAssetsViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E0C2FB439272C5194B4E6F45 /* ALAsset+accessibilityLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EED5643E5548C1619DDC6AE6 /* ALAsset+accessibilityLabel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E14A6A7DB1867DFFA6C42432 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359749D17D48F35EEEC966CD /* AssetsLibrary.framework */; };
+		E5B23C5AB3C605C3A8BAAB7D /* CZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FB2D2FE6FD4CC901311F9B /* CZPhotoPickerController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F108D4C3D18CE13385617BA5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825346B86A05F4EA6B84CD37 /* MobileCoreServices.framework */; };
+		F9A03BC4329CCAC2B67C87D8 /* CZPhotoPickerPermissionAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF9595D161F051D342B99BB /* CZPhotoPickerPermissionAlert.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FB3B0DBCA23056A7045E138B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EB8B069CBC9453EF577B0 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1255022809267A9FFDEA12CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCDB553CEEF0E690749155B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D2223E2A01A8F20FC7D4A4E;
+			remoteInfo = CZPhotoPickerController;
+		};
+		889F1450213B2DF950D3A9F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCDB553CEEF0E690749155B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C858F77F66FADE23B8E009;
+			remoteInfo = "Pods-CTAssetsPickerController";
+		};
+		CFD47217A6E5E6E10D7F6195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCDB553CEEF0E690749155B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E5C097B5BAA3B10BC8138D;
+			remoteInfo = "Pods-CZPhotoPickerController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0247EA49372CC3EF79D7D5EA /* CTAssetsPickerPlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerPlay.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay.png; sourceTree = "<group>"; };
+		07B5BB5136496D91F88C6ECD /* CTAssetsPickerEmptyAsset@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerEmptyAsset@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset@2x.png"; sourceTree = "<group>"; };
+		09C6A5B5BD7D968EB02BFFFC /* CTAssetsPickerChecked@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerChecked@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked@2x.png"; sourceTree = "<group>"; };
+		0AE1941FFA93C0DE4DF47FB4 /* ALAsset+assetType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAsset+assetType.h"; path = "CTAssetsPickerController/ALAsset+assetType.h"; sourceTree = "<group>"; };
+		0BABF1785F85EEB1B10E29D4 /* ALAsset+isEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAsset+isEqual.h"; path = "CTAssetsPickerController/ALAsset+isEqual.h"; sourceTree = "<group>"; };
+		0C592A342582FB3B30D08762 /* CTAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsViewController.m; path = CTAssetsPickerController/CTAssetsViewController.m; sourceTree = "<group>"; };
+		14F5153968655CBEA2A14D79 /* ALAsset+assetType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+assetType.m"; path = "CTAssetsPickerController/ALAsset+assetType.m"; sourceTree = "<group>"; };
+		1814702B12224DA7D12EC43E /* CTAssetsSupplementaryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsSupplementaryView.m; path = CTAssetsPickerController/CTAssetsSupplementaryView.m; sourceTree = "<group>"; };
+		18F815E23F9CB4B4E03C6042 /* Pods-CTAssetsPickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTAssetsPickerController.xcconfig"; sourceTree = "<group>"; };
+		1A52A162D59C98664B5C3245 /* UIAccessDeniedViewLock@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIAccessDeniedViewLock@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/UIAccessDeniedViewLock@2x.png"; sourceTree = "<group>"; };
+		1AA4EAFD691B8C1D38052210 /* ALAsset+accessibilityLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAsset+accessibilityLabel.h"; path = "CTAssetsPickerController/ALAsset+accessibilityLabel.h"; sourceTree = "<group>"; };
+		1AFB180622E6DEC95E10A524 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D70F3510DB2DA98750CF99C /* CTAssetItemViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetItemViewController.m; path = CTAssetsPickerController/CTAssetItemViewController.m; sourceTree = "<group>"; };
+		1E7575D98BA8554E615442F4 /* Pods-CZPhotoPickerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZPhotoPickerController-Private.xcconfig"; sourceTree = "<group>"; };
+		22F7F7851A159270002F9FC9 /* ALAssetsLibrary+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+Singleton.h"; sourceTree = "<group>"; };
+		22F7F7861A159270002F9FC9 /* ALAssetsLibrary+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+Singleton.m"; sourceTree = "<group>"; };
+		27C45E9FBFF30C6FDE3A5F43 /* CTAssetsViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsViewCell.m; path = CTAssetsPickerController/CTAssetsViewCell.m; sourceTree = "<group>"; };
+		284107301BF9EEC7E1A4EE45 /* CTAssetsViewControllerTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsViewControllerTransition.m; path = CTAssetsPickerController/CTAssetsViewControllerTransition.m; sourceTree = "<group>"; };
+		2ECD25FAA84F2E9662AAF03A /* CTAssetsPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsPickerController.m; path = CTAssetsPickerController/CTAssetsPickerController.m; sourceTree = "<group>"; };
+		30A377A628D89F0205F2C4DC /* CZPhotoPreviewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPhotoPreviewViewController.h; path = CZPhotoPickerController/CZPhotoPreviewViewController.h; sourceTree = "<group>"; };
+		319298482A8D6FF80DA82691 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		35204B2B02A3554C08E1B903 /* Pods-CTAssetsPickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTAssetsPickerController-dummy.m"; sourceTree = "<group>"; };
+		359749D17D48F35EEEC966CD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		376D60BBEC56F5F6A08A0407 /* CTAssetsViewControllerTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsViewControllerTransition.h; path = CTAssetsPickerController/CTAssetsViewControllerTransition.h; sourceTree = "<group>"; };
+		37BEEE7FAE0B86E8B3EDF354 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AF9333083177377D8F264C8 /* CZCropPreviewOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZCropPreviewOverlayView.h; path = CZPhotoPickerController/CZCropPreviewOverlayView.h; sourceTree = "<group>"; };
+		3E0F44156D1CC24271BB3611 /* CTAssetsPickerChecked@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerChecked@3x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked@3x.png"; sourceTree = "<group>"; };
+		3F62833B84FAE5928E65AB5B /* CZCropPreviewOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZCropPreviewOverlayView.m; path = CZPhotoPickerController/CZCropPreviewOverlayView.m; sourceTree = "<group>"; };
+		41A4F4BEF4B0FED328B08CC3 /* CTAssetsPickerCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsPickerCommon.h; path = CTAssetsPickerController/CTAssetsPickerCommon.h; sourceTree = "<group>"; };
+		4386E729412D72106F46C8AA /* CZPhotoPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPhotoPickerController.h; path = CZPhotoPickerController/CZPhotoPickerController.h; sourceTree = "<group>"; };
+		49A696434222DE0A4B531D41 /* UIAccessDeniedViewLock.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIAccessDeniedViewLock.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/UIAccessDeniedViewLock.png; sourceTree = "<group>"; };
+		4CB9FB8256257B629D78008D /* CZPhotoPickerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZPhotoPickerController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		536719C25F698FCA90494771 /* Pods-CTAssetsPickerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTAssetsPickerController-Private.xcconfig"; sourceTree = "<group>"; };
+		56D4B7485F7F0BEED49765E8 /* CTAssetsPickerPlay@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerPlay@3x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay@3x.png"; sourceTree = "<group>"; };
+		5EF8874616810C506C3228E1 /* CTAssetsGroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsGroupViewController.m; path = CTAssetsPickerController/CTAssetsGroupViewController.m; sourceTree = "<group>"; };
+		60FB2D2FE6FD4CC901311F9B /* CZPhotoPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZPhotoPickerController.m; path = CZPhotoPickerController/CZPhotoPickerController.m; sourceTree = "<group>"; };
+		657EF141189CDAA105B5AC9C /* NSDateFormatter+timeIntervalFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+timeIntervalFormatter.h"; path = "CTAssetsPickerController/NSDateFormatter+timeIntervalFormatter.h"; sourceTree = "<group>"; };
+		660DAEA7FE3A7411102775D3 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		6987830F70AAB83213BE4575 /* CZCroppingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZCroppingScrollView.m; path = CZPhotoPickerController/CZCroppingScrollView.m; sourceTree = "<group>"; };
+		69A81C6895E27CEF7DCBDE70 /* NSDateFormatter+timeIntervalFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+timeIntervalFormatter.m"; path = "CTAssetsPickerController/NSDateFormatter+timeIntervalFormatter.m"; sourceTree = "<group>"; };
+		69EE9C8B75ED3FD4B249703E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A77378312CD12E85187A4C9 /* CTAssetsGroupViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsGroupViewCell.m; path = CTAssetsPickerController/CTAssetsGroupViewCell.m; sourceTree = "<group>"; };
+		6AC8F1B3CBFFE46CC0BF09B6 /* ALAsset+isEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+isEqual.m"; path = "CTAssetsPickerController/ALAsset+isEqual.m"; sourceTree = "<group>"; };
+		6D505A462FE37A327D834E43 /* CTAssetItemViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetItemViewController.h; path = CTAssetsPickerController/CTAssetItemViewController.h; sourceTree = "<group>"; };
+		70E81A3E70B9AF2397A278CD /* CTAssetScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetScrollView.m; path = CTAssetsPickerController/CTAssetScrollView.m; sourceTree = "<group>"; };
+		718FC8B4BE33F5C4102C08C0 /* libPods-CTAssetsPickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTAssetsPickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		721551B9CF8133F86FECECCE /* CZPhotoPreviewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CZPhotoPreviewViewController.xib; path = CZPhotoPickerController/CZPhotoPreviewViewController.xib; sourceTree = "<group>"; };
+		75BAB91FEC81EBD6548833A2 /* libPods-CZPhotoPickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CZPhotoPickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772F063753E666B94CCB178A /* Pods-CTAssetsPickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTAssetsPickerController-prefix.pch"; sourceTree = "<group>"; };
+		7CEC1F8C338AC2CB1EEB81A9 /* CTAssetScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetScrollView.h; path = CTAssetsPickerController/CTAssetScrollView.h; sourceTree = "<group>"; };
+		825346B86A05F4EA6B84CD37 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8BAE9500BBD51BF8D30E262C /* CTAssetsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsViewController.h; path = CTAssetsPickerController/CTAssetsViewController.h; sourceTree = "<group>"; };
+		8D5E3939F17A2728F1846BBB /* CTAssetsViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsViewCell.h; path = CTAssetsPickerController/CTAssetsViewCell.h; sourceTree = "<group>"; };
+		99BB028039BD814D288C0CFD /* CTAssetsPickerVideo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerVideo@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo@2x.png"; sourceTree = "<group>"; };
+		9E9D6F8B4BD0E78A5B08C4C3 /* CTAssetsSupplementaryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsSupplementaryView.h; path = CTAssetsPickerController/CTAssetsSupplementaryView.h; sourceTree = "<group>"; };
+		A3743E5F253F5CD3477065C3 /* CTAssetsPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTAssetsPageViewController.m; path = CTAssetsPickerController/CTAssetsPageViewController.m; sourceTree = "<group>"; };
+		A53F047D9DFC3B74272D05C0 /* CTAssetsGroupViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsGroupViewCell.h; path = CTAssetsPickerController/CTAssetsGroupViewCell.h; sourceTree = "<group>"; };
+		A9052BAF80D29D5F294C198F /* CTAssetsPickerPlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerPlay@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerPlay.imageset/CTAssetsPickerPlay@2x.png"; sourceTree = "<group>"; };
+		AD560F99A39E2B7CDE4C9595 /* CTAssetsPickerEmptyCell.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerEmptyCell.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell.png; sourceTree = "<group>"; };
+		B0341C80BCFFEABB4B0E1125 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		B043E31DB4F8FAAE406D3F4F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC7EB8B069CBC9453EF577B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BCEA1EC3785CFBCFDD1D6742 /* CTAssetsPickerVideo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerVideo.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo.png; sourceTree = "<group>"; };
+		C0974F353DA4690CDDA1ED19 /* CTAssetsPickerEmptyAsset@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerEmptyAsset@3x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset@3x.png"; sourceTree = "<group>"; };
+		C2B95720A4BD9AEAD180A8C1 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		C3442AC7F1CF28FBB7FF72D6 /* CTAssetsPickerVideo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerVideo@3x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerVideo.imageset/CTAssetsPickerVideo@3x.png"; sourceTree = "<group>"; };
+		CAF83BCC975203BC5A0CD9EE /* CZPhotoPickerPermissionAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPhotoPickerPermissionAlert.h; path = CZPhotoPickerController/CZPhotoPickerPermissionAlert.h; sourceTree = "<group>"; };
+		CCF9595D161F051D342B99BB /* CZPhotoPickerPermissionAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZPhotoPickerPermissionAlert.m; path = CZPhotoPickerController/CZPhotoPickerPermissionAlert.m; sourceTree = "<group>"; };
+		D2C70AF5FC87143467B09EB5 /* CTAssetsPickerEmptyAsset.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerEmptyAsset.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyAsset.imageset/CTAssetsPickerEmptyAsset.png; sourceTree = "<group>"; };
+		D2F1488E5BE91CA18F1C3075 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		D4E8E7701CD5D0723A9644DC /* Pods-CZPhotoPickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CZPhotoPickerController-dummy.m"; sourceTree = "<group>"; };
+		D8CC0AFC4283C565C2EA070F /* Pods-CZPhotoPickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CZPhotoPickerController-prefix.pch"; sourceTree = "<group>"; };
+		DA548F0721F2AC9C01A5856B /* CTAssetsPickerEmptyCell@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerEmptyCell@2x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell@2x.png"; sourceTree = "<group>"; };
+		DB30EB4E093BAD7CD8FB4C28 /* CZCroppingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZCroppingScrollView.h; path = CZPhotoPickerController/CZCroppingScrollView.h; sourceTree = "<group>"; };
+		DBABC3CC37AF955664070C10 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		E8D9D91D2BBFF297009AF8AE /* UIAccessDeniedViewLock@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIAccessDeniedViewLock@3x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerLocked.imageset/UIAccessDeniedViewLock@3x.png"; sourceTree = "<group>"; };
+		EBDDB5139B743591167AF453 /* ALAssetsGroup+isEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAssetsGroup+isEqual.m"; path = "CTAssetsPickerController/ALAssetsGroup+isEqual.m"; sourceTree = "<group>"; };
+		ED8F9E74BF2416E820A0162C /* CTAssetsGroupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsGroupViewController.h; path = CTAssetsPickerController/CTAssetsGroupViewController.h; sourceTree = "<group>"; };
+		EDBE3D0F477B4104E5C5F288 /* Pods-CZPhotoPickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZPhotoPickerController.xcconfig"; sourceTree = "<group>"; };
+		EED5643E5548C1619DDC6AE6 /* ALAsset+accessibilityLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+accessibilityLabel.m"; path = "CTAssetsPickerController/ALAsset+accessibilityLabel.m"; sourceTree = "<group>"; };
+		F11AE759B8396AAED8F15CB8 /* ALAssetsGroup+isEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALAssetsGroup+isEqual.h"; path = "CTAssetsPickerController/ALAssetsGroup+isEqual.h"; sourceTree = "<group>"; };
+		F211E307EC07F4AC60F1093C /* CTAssetsPickerEmptyCell@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "CTAssetsPickerEmptyCell@3x.png"; path = "CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerEmptyCell.imageset/CTAssetsPickerEmptyCell@3x.png"; sourceTree = "<group>"; };
+		F395AE2AC6C798FA5D292A97 /* CTAssetsPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsPageViewController.h; path = CTAssetsPickerController/CTAssetsPageViewController.h; sourceTree = "<group>"; };
+		F51ED7EF4D97E24D5D58F829 /* CTAssetsPickerChecked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CTAssetsPickerChecked.png; path = CTAssetsPickerController/CTAssetsPicker.xcassets/CTAssetsPickerChecked.imageset/CTAssetsPickerChecked.png; sourceTree = "<group>"; };
+		F5BD2958703C4C90ACBA5455 /* CZPhotoPreviewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZPhotoPreviewViewController.m; path = CZPhotoPickerController/CZPhotoPreviewViewController.m; sourceTree = "<group>"; };
+		FB9E54672B10AFFA1815F3A0 /* CTAssetsPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTAssetsPickerController.h; path = CTAssetsPickerController/CTAssetsPickerController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		316641C6DDF4C9E179D614FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14A6A7DB1867DFFA6C42432 /* AssetsLibrary.framework in Frameworks */,
+				57E1EF343BF7B46F71A83CA2 /* Foundation.framework in Frameworks */,
+				648C7B416BEAE9C1BC0F84A0 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625474A5F0FA55A6236D4E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5796634B360592384EAFF58F /* AssetsLibrary.framework in Frameworks */,
+				4A6CE0E26E9F64735BEE06F7 /* Foundation.framework in Frameworks */,
+				F108D4C3D18CE13385617BA5 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816544CB11462BA3DBC667B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B40FF34E00D60BCBE0C027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3B0DBCA23056A7045E138B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183097A4FA3361C80CFE31E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDBE3D0F477B4104E5C5F288 /* Pods-CZPhotoPickerController.xcconfig */,
+				1E7575D98BA8554E615442F4 /* Pods-CZPhotoPickerController-Private.xcconfig */,
+				D4E8E7701CD5D0723A9644DC /* Pods-CZPhotoPickerController-dummy.m */,
+				D8CC0AFC4283C565C2EA070F /* Pods-CZPhotoPickerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-CZPhotoPickerController";
+			sourceTree = "<group>";
+		};
+		258E568EF45B31D964F13B8F /* CZPhotoPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				3AF9333083177377D8F264C8 /* CZCropPreviewOverlayView.h */,
+				3F62833B84FAE5928E65AB5B /* CZCropPreviewOverlayView.m */,
+				DB30EB4E093BAD7CD8FB4C28 /* CZCroppingScrollView.h */,
+				6987830F70AAB83213BE4575 /* CZCroppingScrollView.m */,
+				4386E729412D72106F46C8AA /* CZPhotoPickerController.h */,
+				60FB2D2FE6FD4CC901311F9B /* CZPhotoPickerController.m */,
+				CAF83BCC975203BC5A0CD9EE /* CZPhotoPickerPermissionAlert.h */,
+				CCF9595D161F051D342B99BB /* CZPhotoPickerPermissionAlert.m */,
+				30A377A628D89F0205F2C4DC /* CZPhotoPreviewViewController.h */,
+				F5BD2958703C4C90ACBA5455 /* CZPhotoPreviewViewController.m */,
+				9DFCF9272628ED3DBEF5CBF4 /* Resources */,
+				183097A4FA3361C80CFE31E5 /* Support Files */,
+				22F7F7851A159270002F9FC9 /* ALAssetsLibrary+Singleton.h */,
+				22F7F7861A159270002F9FC9 /* ALAssetsLibrary+Singleton.m */,
+			);
+			name = CZPhotoPickerController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		29FBBC91126E0008E1C5DA01 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5347EAB190AC7D5DBDB99CCC /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4C3A8DCDD70BF973CD7AB9B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C9236FDFF27DD081DDB9A48 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5347EAB190AC7D5DBDB99CCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37BEEE7FAE0B86E8B3EDF354 /* Pods-acknowledgements.markdown */,
+				69EE9C8B75ED3FD4B249703E /* Pods-acknowledgements.plist */,
+				D2F1488E5BE91CA18F1C3075 /* Pods-dummy.m */,
+				C2B95720A4BD9AEAD180A8C1 /* Pods-environment.h */,
+				660DAEA7FE3A7411102775D3 /* Pods-resources.sh */,
+				319298482A8D6FF80DA82691 /* Pods.debug.xcconfig */,
+				B0341C80BCFFEABB4B0E1125 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		5D6738283A5DFAF06A35B1BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18F815E23F9CB4B4E03C6042 /* Pods-CTAssetsPickerController.xcconfig */,
+				536719C25F698FCA90494771 /* Pods-CTAssetsPickerController-Private.xcconfig */,
+				35204B2B02A3554C08E1B903 /* Pods-CTAssetsPickerController-dummy.m */,
+				772F063753E666B94CCB178A /* Pods-CTAssetsPickerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CTAssetsPickerController";
+			sourceTree = "<group>";
+		};
+		8C9236FDFF27DD081DDB9A48 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				359749D17D48F35EEEC966CD /* AssetsLibrary.framework */,
+				BC7EB8B069CBC9453EF577B0 /* Foundation.framework */,
+				DBABC3CC37AF955664070C10 /* MediaPlayer.framework */,
+				825346B86A05F4EA6B84CD37 /* MobileCoreServices.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9DFCF9272628ED3DBEF5CBF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				721551B9CF8133F86FECECCE /* CZPhotoPreviewViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CE85C91530D822D6DBA8A733 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				258E568EF45B31D964F13B8F /* CZPhotoPickerController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E1FDBD22290902C97F47DE99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CB9FB8256257B629D78008D /* CZPhotoPickerController.bundle */,
+				1AFB180622E6DEC95E10A524 /* libPods.a */,
+				718FC8B4BE33F5C4102C08C0 /* libPods-CTAssetsPickerController.a */,
+				75BAB91FEC81EBD6548833A2 /* libPods-CZPhotoPickerController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E85F1A792929860DBD888486 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F51ED7EF4D97E24D5D58F829 /* CTAssetsPickerChecked.png */,
+				09C6A5B5BD7D968EB02BFFFC /* CTAssetsPickerChecked@2x.png */,
+				3E0F44156D1CC24271BB3611 /* CTAssetsPickerChecked@3x.png */,
+				D2C70AF5FC87143467B09EB5 /* CTAssetsPickerEmptyAsset.png */,
+				07B5BB5136496D91F88C6ECD /* CTAssetsPickerEmptyAsset@2x.png */,
+				C0974F353DA4690CDDA1ED19 /* CTAssetsPickerEmptyAsset@3x.png */,
+				AD560F99A39E2B7CDE4C9595 /* CTAssetsPickerEmptyCell.png */,
+				DA548F0721F2AC9C01A5856B /* CTAssetsPickerEmptyCell@2x.png */,
+				F211E307EC07F4AC60F1093C /* CTAssetsPickerEmptyCell@3x.png */,
+				0247EA49372CC3EF79D7D5EA /* CTAssetsPickerPlay.png */,
+				A9052BAF80D29D5F294C198F /* CTAssetsPickerPlay@2x.png */,
+				56D4B7485F7F0BEED49765E8 /* CTAssetsPickerPlay@3x.png */,
+				BCEA1EC3785CFBCFDD1D6742 /* CTAssetsPickerVideo.png */,
+				99BB028039BD814D288C0CFD /* CTAssetsPickerVideo@2x.png */,
+				C3442AC7F1CF28FBB7FF72D6 /* CTAssetsPickerVideo@3x.png */,
+				49A696434222DE0A4B531D41 /* UIAccessDeniedViewLock.png */,
+				1A52A162D59C98664B5C3245 /* UIAccessDeniedViewLock@2x.png */,
+				E8D9D91D2BBFF297009AF8AE /* UIAccessDeniedViewLock@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EBEB467FDAF257C05BCA859D /* CTAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				1AA4EAFD691B8C1D38052210 /* ALAsset+accessibilityLabel.h */,
+				EED5643E5548C1619DDC6AE6 /* ALAsset+accessibilityLabel.m */,
+				0AE1941FFA93C0DE4DF47FB4 /* ALAsset+assetType.h */,
+				14F5153968655CBEA2A14D79 /* ALAsset+assetType.m */,
+				0BABF1785F85EEB1B10E29D4 /* ALAsset+isEqual.h */,
+				6AC8F1B3CBFFE46CC0BF09B6 /* ALAsset+isEqual.m */,
+				F11AE759B8396AAED8F15CB8 /* ALAssetsGroup+isEqual.h */,
+				EBDDB5139B743591167AF453 /* ALAssetsGroup+isEqual.m */,
+				6D505A462FE37A327D834E43 /* CTAssetItemViewController.h */,
+				1D70F3510DB2DA98750CF99C /* CTAssetItemViewController.m */,
+				7CEC1F8C338AC2CB1EEB81A9 /* CTAssetScrollView.h */,
+				70E81A3E70B9AF2397A278CD /* CTAssetScrollView.m */,
+				A53F047D9DFC3B74272D05C0 /* CTAssetsGroupViewCell.h */,
+				6A77378312CD12E85187A4C9 /* CTAssetsGroupViewCell.m */,
+				ED8F9E74BF2416E820A0162C /* CTAssetsGroupViewController.h */,
+				5EF8874616810C506C3228E1 /* CTAssetsGroupViewController.m */,
+				F395AE2AC6C798FA5D292A97 /* CTAssetsPageViewController.h */,
+				A3743E5F253F5CD3477065C3 /* CTAssetsPageViewController.m */,
+				41A4F4BEF4B0FED328B08CC3 /* CTAssetsPickerCommon.h */,
+				FB9E54672B10AFFA1815F3A0 /* CTAssetsPickerController.h */,
+				2ECD25FAA84F2E9662AAF03A /* CTAssetsPickerController.m */,
+				9E9D6F8B4BD0E78A5B08C4C3 /* CTAssetsSupplementaryView.h */,
+				1814702B12224DA7D12EC43E /* CTAssetsSupplementaryView.m */,
+				8D5E3939F17A2728F1846BBB /* CTAssetsViewCell.h */,
+				27C45E9FBFF30C6FDE3A5F43 /* CTAssetsViewCell.m */,
+				8BAE9500BBD51BF8D30E262C /* CTAssetsViewController.h */,
+				0C592A342582FB3B30D08762 /* CTAssetsViewController.m */,
+				376D60BBEC56F5F6A08A0407 /* CTAssetsViewControllerTransition.h */,
+				284107301BF9EEC7E1A4EE45 /* CTAssetsViewControllerTransition.m */,
+				657EF141189CDAA105B5AC9C /* NSDateFormatter+timeIntervalFormatter.h */,
+				69A81C6895E27CEF7DCBDE70 /* NSDateFormatter+timeIntervalFormatter.m */,
+				E85F1A792929860DBD888486 /* Resources */,
+				5D6738283A5DFAF06A35B1BB /* Support Files */,
+			);
+			path = CTAssetsPickerController;
+			sourceTree = "<group>";
+		};
+		F4EE3D21A91E772FAF805F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBEB467FDAF257C05BCA859D /* CTAssetsPickerController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F752072B3BE6BDAACA67F490 = {
+			isa = PBXGroup;
+			children = (
+				B043E31DB4F8FAAE406D3F4F /* Podfile */,
+				CE85C91530D822D6DBA8A733 /* Development Pods */,
+				4C3A8DCDD70BF973CD7AB9B4 /* Frameworks */,
+				F4EE3D21A91E772FAF805F64 /* Pods */,
+				E1FDBD22290902C97F47DE99 /* Products */,
+				29FBBC91126E0008E1C5DA01 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02D13504273A0CEE4C5ACD56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788E3023B609B1EB0EC5BB71 /* ALAsset+accessibilityLabel.h in Headers */,
+				3449B5968F564219922F4DA5 /* ALAsset+assetType.h in Headers */,
+				086AA2DCB3D7CFBF1E7D6C71 /* ALAsset+isEqual.h in Headers */,
+				2519134321ECA5BD7FF9D30A /* ALAssetsGroup+isEqual.h in Headers */,
+				A97D8A5F86A7D38F6E958FE4 /* CTAssetItemViewController.h in Headers */,
+				20A79BF0F4F648EFB2D15C4D /* CTAssetScrollView.h in Headers */,
+				B2B64FEBA0232FB8FDE168F9 /* CTAssetsGroupViewCell.h in Headers */,
+				0F5FEC1078138A51ECCAF1C8 /* CTAssetsGroupViewController.h in Headers */,
+				494919A4ACF2ECE6480068C8 /* CTAssetsPageViewController.h in Headers */,
+				D116697D918374ED17F62FC3 /* CTAssetsPickerCommon.h in Headers */,
+				2BD0E35B7A9CEFC86016585E /* CTAssetsPickerController.h in Headers */,
+				7537AEB680B231EE92FF93F7 /* CTAssetsSupplementaryView.h in Headers */,
+				8C8193C0986E6E9953AF5CE8 /* CTAssetsViewCell.h in Headers */,
+				8F7679B2F413CEC2E519CDCE /* CTAssetsViewController.h in Headers */,
+				38433BF6967CEDEB891E40C9 /* CTAssetsViewControllerTransition.h in Headers */,
+				51D71538407E178C9AE403AB /* NSDateFormatter+timeIntervalFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C572AE2B64A284887E3094D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F7F7881A1593A0002F9FC9 /* ALAssetsLibrary+Singleton.h in Headers */,
+				D7571492F91B4F8CE2B07B5D /* CZCropPreviewOverlayView.h in Headers */,
+				3E595409448F660F4EDA5E2C /* CZCroppingScrollView.h in Headers */,
+				67EA2AAE18C990B2B784F272 /* CZPhotoPickerController.h in Headers */,
+				08AA5311EE2116439648FCA6 /* CZPhotoPickerPermissionAlert.h in Headers */,
+				AEA4968E05169ADD0FCAAFB7 /* CZPhotoPreviewViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08E5C097B5BAA3B10BC8138D /* Pods-CZPhotoPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C482C68FE3E7AE4DDE8D1822 /* Build configuration list for PBXNativeTarget "Pods-CZPhotoPickerController" */;
+			buildPhases = (
+				C5A5C869E6CE04C45E1FEBE3 /* Sources */,
+				625474A5F0FA55A6236D4E03 /* Frameworks */,
+				5C572AE2B64A284887E3094D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D15AC0EDC63992AD7A93B2E /* PBXTargetDependency */,
+			);
+			name = "Pods-CZPhotoPickerController";
+			productName = "Pods-CZPhotoPickerController";
+			productReference = 75BAB91FEC81EBD6548833A2 /* libPods-CZPhotoPickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		16C858F77F66FADE23B8E009 /* Pods-CTAssetsPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ED65AD0887BF85CC4C4E2E1 /* Build configuration list for PBXNativeTarget "Pods-CTAssetsPickerController" */;
+			buildPhases = (
+				25B49E1A353BD1CC1BE08A7A /* Sources */,
+				316641C6DDF4C9E179D614FA /* Frameworks */,
+				02D13504273A0CEE4C5ACD56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CTAssetsPickerController";
+			productName = "Pods-CTAssetsPickerController";
+			productReference = 718FC8B4BE33F5C4102C08C0 /* libPods-CTAssetsPickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4D2223E2A01A8F20FC7D4A4E /* CZPhotoPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B79A7222C9C80E4611FF88 /* Build configuration list for PBXNativeTarget "CZPhotoPickerController" */;
+			buildPhases = (
+				DCEFC65880B02C4C534081BF /* Sources */,
+				816544CB11462BA3DBC667B1 /* Frameworks */,
+				017F33028C96A03A59238EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZPhotoPickerController;
+			productName = CZPhotoPickerController;
+			productReference = 4CB9FB8256257B629D78008D /* CZPhotoPickerController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B47E991670E2A415EA3333D3 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1669C0810AA95E7D25772BD5 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				416C784351A44A2786F04D46 /* Sources */,
+				D7B40FF34E00D60BCBE0C027 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				549D17DF0F417EE8FAE64762 /* PBXTargetDependency */,
+				7703DBE7E124F308A49C8867 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 1AFB180622E6DEC95E10A524 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBCDB553CEEF0E690749155B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 75E0B65271A1B19A6E204BE7 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F752072B3BE6BDAACA67F490;
+			productRefGroup = E1FDBD22290902C97F47DE99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D2223E2A01A8F20FC7D4A4E /* CZPhotoPickerController */,
+				B47E991670E2A415EA3333D3 /* Pods */,
+				16C858F77F66FADE23B8E009 /* Pods-CTAssetsPickerController */,
+				08E5C097B5BAA3B10BC8138D /* Pods-CZPhotoPickerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		017F33028C96A03A59238EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B0A8DD0EF12D4765D8E7B78 /* CZPhotoPreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B49E1A353BD1CC1BE08A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C2FB439272C5194B4E6F45 /* ALAsset+accessibilityLabel.m in Sources */,
+				B9E1DD7A773B3124C45C827B /* ALAsset+assetType.m in Sources */,
+				4A4E987B0A3B08C20B7E7803 /* ALAsset+isEqual.m in Sources */,
+				5FCB40CFCF6F5D2E5B75876E /* ALAssetsGroup+isEqual.m in Sources */,
+				662D8B86B5136AEAC7E3EB04 /* CTAssetItemViewController.m in Sources */,
+				4F62782707826E2C539BA678 /* CTAssetScrollView.m in Sources */,
+				9A29EDB69DA29B1C4B368CCD /* CTAssetsGroupViewCell.m in Sources */,
+				41FA434F0FA59095438C5FB2 /* CTAssetsGroupViewController.m in Sources */,
+				6F688A9362266BF5537033CA /* CTAssetsPageViewController.m in Sources */,
+				1266236AAAD87117E5CE0D8E /* CTAssetsPickerController.m in Sources */,
+				12D9FD5E410FDEC42BBA8E21 /* CTAssetsSupplementaryView.m in Sources */,
+				A1DB67E8BB58CCC55940F76C /* CTAssetsViewCell.m in Sources */,
+				DAA6754F5668D7815F3366ED /* CTAssetsViewController.m in Sources */,
+				0C30DEBF2C657AF63DC6ACA7 /* CTAssetsViewControllerTransition.m in Sources */,
+				060C03ABA1EFC9BFB6AD4681 /* NSDateFormatter+timeIntervalFormatter.m in Sources */,
+				B3EB702FC7DD0E4DA553EE0F /* Pods-CTAssetsPickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416C784351A44A2786F04D46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02B104D3F9D7139AF1DAB86 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A5C869E6CE04C45E1FEBE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD3CF9F68AF86E83B9C542A /* CZCropPreviewOverlayView.m in Sources */,
+				C728E98E438FD386E8377E3F /* CZCroppingScrollView.m in Sources */,
+				E5B23C5AB3C605C3A8BAAB7D /* CZPhotoPickerController.m in Sources */,
+				F9A03BC4329CCAC2B67C87D8 /* CZPhotoPickerPermissionAlert.m in Sources */,
+				22F7F7891A1593A0002F9FC9 /* ALAssetsLibrary+Singleton.m in Sources */,
+				8FBD75ECA9E05B139DC0A5EA /* CZPhotoPreviewViewController.m in Sources */,
+				D1D201180CEE35CF676CC4CD /* Pods-CZPhotoPickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEFC65880B02C4C534081BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		549D17DF0F417EE8FAE64762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C858F77F66FADE23B8E009 /* Pods-CTAssetsPickerController */;
+			targetProxy = 889F1450213B2DF950D3A9F9 /* PBXContainerItemProxy */;
+		};
+		7703DBE7E124F308A49C8867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E5C097B5BAA3B10BC8138D /* Pods-CZPhotoPickerController */;
+			targetProxy = CFD47217A6E5E6E10D7F6195 /* PBXContainerItemProxy */;
+		};
+		8D15AC0EDC63992AD7A93B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D2223E2A01A8F20FC7D4A4E /* CZPhotoPickerController */;
+			targetProxy = 1255022809267A9FFDEA12CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D8D024F32EC599CD90AA936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536719C25F698FCA90494771 /* Pods-CTAssetsPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CTAssetsPickerController/Pods-CTAssetsPickerController-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D5926605BCECB582EF753E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7575D98BA8554E615442F4 /* Pods-CZPhotoPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CZPhotoPickerController/Pods-CZPhotoPickerController-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		615D633AFEBF62AB65A851DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319298482A8D6FF80DA82691 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6A2A32339E2192E7D6FFBE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70CBAC82AE6FCC8EA3357C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		A4EE1CD1FA1BD7498855C60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D747D336E86F7EA4D84DD70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F29DAA473FACCE0DAC28D850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7575D98BA8554E615442F4 /* Pods-CZPhotoPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CZPhotoPickerController/Pods-CZPhotoPickerController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F4112E26759651F9BC7CBA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536719C25F698FCA90494771 /* Pods-CTAssetsPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CTAssetsPickerController/Pods-CTAssetsPickerController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAD01776A0EC1DF984975780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0341C80BCFFEABB4B0E1125 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1669C0810AA95E7D25772BD5 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				615D633AFEBF62AB65A851DE /* Debug */,
+				FAD01776A0EC1DF984975780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ED65AD0887BF85CC4C4E2E1 /* Build configuration list for PBXNativeTarget "Pods-CTAssetsPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4112E26759651F9BC7CBA75 /* Debug */,
+				3D8D024F32EC599CD90AA936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E0B65271A1B19A6E204BE7 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CBAC82AE6FCC8EA3357C64 /* Debug */,
+				6A2A32339E2192E7D6FFBE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B79A7222C9C80E4611FF88 /* Build configuration list for PBXNativeTarget "CZPhotoPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D747D336E86F7EA4D84DD70C /* Debug */,
+				A4EE1CD1FA1BD7498855C60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C482C68FE3E7AE4DDE8D1822 /* Build configuration list for PBXNativeTarget "Pods-CZPhotoPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29DAA473FACCE0DAC28D850 /* Debug */,
+				49D5926605BCECB582EF753E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBCDB553CEEF0E690749155B /* Project object */;
+}

@@ -19,6 +19,7 @@
 #import "CZCropPreviewOverlayView.h"
 #import "CZPhotoPickerPermissionAlert.h"
 #import "CZPhotoPreviewViewController.h"
+#import "ALAssetsLibrary+Singleton.h"
 
 
 typedef enum {
@@ -122,7 +123,7 @@ typedef enum {
 - (ALAssetsLibrary *)assetsLibrary
 {
     if (_assetsLibrary == nil) {
-        _assetsLibrary = [[ALAssetsLibrary alloc] init];
+        _assetsLibrary = [ALAssetsLibrary sharedInstance];
     }
     
     return _assetsLibrary;
